@@ -1,11 +1,129 @@
 .site-footer {
+  font-family: "gilroy-regular";
+  color: #a00014;
+  padding-bottom: 0;
   &.no-widgets {
     margin-top: 88px;
   }
   width: 100%;
   max-width: unset;
+  & > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .no-widgets .site-footer {
   margin-top: 88px;
-  border: 1px solid #a00014;
+  border-top: 1px solid #a00014;
+}
+.footerBottom {
+  border-top: 1px solid #a00014;
+  .bottomText {
+    font-family: "romelu_vomelu_italic";
+    font-size: 20px;
+    // font-style: italic;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.022em;
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .copyrights {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border-left: 1px solid #a00014;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+.footer-logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #a00014;
+  img {
+    max-width: 60%;
+  }
+}
+.footer-navigation {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.footer-navigation-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.footer-navigation-wrapper li {
+  line-height: 22px;
+  a {
+    font-family: "gilroy-regular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    padding: 0;
+    color: #a00014;
+  }
+  &.instaLink a {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    &::before {
+      content: "";
+      height: 23px;
+      width: 23px;
+      background: url("../images/insta-icon.svg") no-repeat;
+      margin-right: 16px;
+    }
+  }
+}
+.footer-navigation-wrapper li a:link,
+.footer-navigation-wrapper li a:visited,
+.footer-navigation-wrapper li a:active {
+  color: #a00014;
+}
+@media only screen and (max-width: 991px) {
+  .footer-navigation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .footer-navigation {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .site-footer .col-md-4 {
+    border-top: 1px solid #a00014;
+  }
+  .footer-logo,
+  .footerBottom .copyrights {
+    border-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footerBottom .bottomText {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .footer-navigation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
 }
