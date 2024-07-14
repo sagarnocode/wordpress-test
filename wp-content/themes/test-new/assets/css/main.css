@@ -1,53 +1,53 @@
 @font-face {
-  font-family: "romelu_vomeluitalic";
+  font-family: "romelu_vomelu_italic";
   src: url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff2") format("woff2"), url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "gilroy-regularuploaded_file";
+  font-family: "gilroy-regular";
   src: url("../fonts/gilroy-regular-webfont.woff2") format("woff2"), url("../fonts/gilroy-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "gilroy-semibolduploaded_file";
+  font-family: "gilroy-semibold";
   src: url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"), url("../fonts/gilroy-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "gilroy-bolduploaded_file";
+  font-family: "gilroy-bold";
   src: url("../fonts/gilroy-bold-webfont.woff2") format("woff2"), url("../fonts/gilroy-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "gilroy-lightuploaded_file";
+  font-family: "gilroy-light";
   src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "agathoregular";
+  font-family: "agatho-regular";
   src: url("../fonts/agatho_regular-webfont.woff2") format("woff2"), url("../fonts/agatho_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "agatholight";
+  font-family: "agatho-light";
   src: url("../fonts/agatho__light-webfont.woff2") format("woff2"), url("../fonts/agatho__light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "agathobold";
+  font-family: "agatho-bold";
   src: url("../fonts/agatho__bold-webfont.woff2") format("woff2"), url("../fonts/agatho__bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background: #FFFCF6;
+  background: #fffcf6;
 }
 
 @media (min-width: 1440px) {
@@ -69,9 +69,9 @@ a:hover {
   text-decoration: none;
 }
 
-header {
-  padding: 24px 0;
-  background: url("../images/pattern-02.png");
+header .navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 header .bg-light {
   background-color: inherit !important;
@@ -85,15 +85,15 @@ header .site-logo {
 header .menu-wrapper li a {
   padding-left: 20px !important;
   padding-right: 20px !important;
-  font-family: "gilroy-regularuploaded_file" !important;
+  font-family: "gilroy-regular" !important;
   font-size: 20px !important;
   font-weight: 500 !important;
   line-height: 24.76px !important;
-  color: #F1E5BF !important;
+  color: #f1e5bf !important;
   text-transform: capitalize;
 }
 header .menu-wrapper li a:hover, header .menu-wrapper li a:active, header .menu-wrapper li a:focus {
-  color: #F1E5BF;
+  color: #f1e5bf;
   text-decoration: none !important;
   outline: none !important;
   background: transparent !important;
@@ -102,15 +102,15 @@ header .menu-wrapper li:last-child {
   margin-left: 67px;
 }
 header .menu-wrapper li:last-child a {
-  background: #F3E5BA !important;
-  color: #A00014 !important;
+  background: #f3e5ba !important;
+  color: #a00014 !important;
   padding: 13px 32px !important;
   border-radius: 5px;
 }
 header .menu-wrapper .current-menu-item a {
   font-weight: 600 !important;
   text-decoration: none !important;
-  font-family: "gilroy-semibolduploaded_file" !important;
+  font-family: "gilroy-semibold" !important;
 }
 
 .dm-sans-as {
@@ -119,10 +119,11 @@ header .menu-wrapper .current-menu-item a {
 }
 
 .bannerWrap {
-  padding-top: 62px;
+  margin-top: -120px;
+  padding-top: 182px;
   padding-bottom: 84px;
   margin-bottom: 53px;
-  background: url("../images/pattern-02.png");
+  background: #a00014 url("../images/couplet-pattern.png") top left;
 }
 .bannerWrap h1 {
   padding-bottom: 22px;
@@ -130,7 +131,7 @@ header .menu-wrapper .current-menu-item a {
 .bannerWrap .line {
   margin-bottom: 37px;
   max-width: 342px;
-  border-bottom: 1px solid #F3E5BA;
+  border-bottom: 1px solid #f3e5ba;
 }
 .bannerWrap .mainLogo {
   max-width: 390px;
@@ -139,11 +140,19 @@ header .menu-wrapper .current-menu-item a {
   max-width: 100%;
   max-height: 100%;
 }
+.bannerWrap h1.logoText {
+  font-family: "agatho-light";
+  font-size: 130px;
+  font-weight: 300;
+  line-height: 137.54px;
+  color: #f3e5ba;
+  margin-bottom: 0;
+}
 .bannerWrap h2,
 .bannerWrap h3 {
-  font-family: "romelu_vomeluitalic";
+  font-family: "romelu_vomelu_italic";
   line-height: 45px;
-  color: #F3E5BA;
+  color: #f3e5ba;
   max-width: 434px;
   font-weight: 400;
 }
@@ -157,7 +166,6 @@ header .menu-wrapper .current-menu-item a {
 }
 .bannerWrap .innerBanner {
   max-width: 426px;
-  margin-left: -18px;
 }
 
 .bannerContent {
@@ -169,51 +177,61 @@ header .menu-wrapper .current-menu-item a {
   margin-left: -40px;
 }
 .btn-wrap a {
-  font-family: "gilroy-semibolduploaded_file";
+  font-family: "gilroy-semibold";
   font-size: 18px;
-  line-height: 22.05px;
+  line-height: 22px;
   letter-spacing: 0.005em;
-  padding: 17px 47px;
+  padding: 17px;
   border-radius: 5px;
   margin-left: 40px;
+  min-width: 192px;
+  text-align: center;
+  height: 56px;
+}
+.btn-wrap a.sec-btn {
+  border: 2px solid #f3e5ba;
+  padding: 15px;
+  color: #f3e5ba;
+}
+.btn-wrap a.sec-btn:hover {
+  color: #f3e5ba;
 }
 
 .primary-btn {
-  border: 1px solid #F3E5BA;
-  background-color: #F3E5BA;
-  color: #A00014;
+  border: 1px solid #f3e5ba;
+  background-color: #f3e5ba;
+  color: #a00014;
 }
 .primary-btn:hover {
-  color: #A00014;
-}
-
-.sec-btn {
-  border: 1px solid #F3E5BA;
-  padding: 17px 48px;
-  color: #F3E5BA;
-}
-.sec-btn:hover {
-  color: #F3E5BA;
+  color: #a00014;
 }
 
 .bannerImgWrap {
-  border: 1px solid #F1E5BF;
+  border: 1px solid #f1e5bf;
+  background: #a00014;
   padding: 34px;
+  padding-bottom: 0;
   border-radius: 5px;
-  margin-right: -24px;
   max-width: 670px;
   margin-left: 40px;
 }
 .bannerImgWrap .mainImg {
-  margin-bottom: 40px;
+  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 5px;
+  overflow: hidden;
 }
-.bannerImgWrap p {
-  color: #F3E5BA;
+.bannerImgWrap .photoInfo {
+  color: #f3e5ba;
   font-size: 24px;
   line-height: 28.8px;
   text-align: center;
-  font-family: "gilroy-lightuploaded_file";
-  margin-bottom: 23px;
+  font-family: "gilroy-light";
+  min-height: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
 }
 
 .aboutWrap {
@@ -221,21 +239,21 @@ header .menu-wrapper .current-menu-item a {
 }
 
 .borderTitle {
-  font-family: "romelu_vomeluitalic";
+  font-family: "romelu_vomelu_italic";
   font-size: 32px;
   line-height: 35.2px;
   text-align: center;
-  color: #A00014;
+  color: #a00014;
   padding: 24px 0 22px;
   margin-bottom: 80px;
-  border-top: 1px solid #5DAA9B;
-  border-bottom: 1px solid #5DAA9B;
+  border-top: 1px solid #5daa9b;
+  border-bottom: 1px solid #5daa9b;
 }
 
 .aboutDetail {
-  color: #F3E5BA;
+  color: #f3e5ba;
   min-height: 251px;
-  background: #A00014;
+  background: #a00014;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -244,14 +262,15 @@ header .menu-wrapper .current-menu-item a {
   padding: 22px 20px 28px 20px;
 }
 .aboutDetail .iconWrap {
-  width: 120px;
-  height: 119px;
+  width: 98px;
+  height: 98px;
   text-align: center;
+  margin-bottom: 2px;
 }
 .aboutDetail h4 {
-  font-family: "agatholight";
+  font-family: "agatho-light";
   font-size: 28px;
-  line-height: 29.62px;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -260,15 +279,15 @@ header .menu-wrapper .current-menu-item a {
   font-optical-sizing: auto;
   font-size: 18px;
   font-weight: 400;
-  line-height: 23.44px;
+  line-height: 24px;
   text-align: center;
-  max-width: 178px;
   margin-bottom: 0;
 }
 
 .layerImageBox {
   position: relative;
   display: flex;
+  justify-content: end;
 }
 .layerImageBox .layerImageWrap {
   position: relative;
@@ -280,27 +299,29 @@ header .menu-wrapper .current-menu-item a {
 }
 .layerImageBox .layerImgBg {
   border-radius: 5px;
-  width: 89%;
+  width: 88%;
   height: 100%;
-  background: #A00014;
+  background: #a00014;
   position: absolute;
   z-index: 1;
   bottom: -18px;
-  right: -10px;
+  right: -15px;
 }
 
 .newAgeWrap {
-  color: #A00014;
+  color: #a00014;
   margin-bottom: 160px;
 }
 .newAgeWrap .layerImageBox {
   margin-top: -20px;
+  margin-right: 18px;
 }
-.newAgeWrap .layerImageWrap {
-  max-width: 559px;
+.newAgeWrap .layerImageWrap img {
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .newAgeWrap h2 {
-  font-family: "romelu_vomeluitalic";
+  font-family: "romelu_vomelu_italic";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -343,7 +364,7 @@ header .menu-wrapper .current-menu-item a {
   align-items: center;
   padding-left: 9px;
   padding-right: 19px;
-  border-left: 1px solid #5DAA9B;
+  border-left: 1px solid #5daa9b;
 }
 .checkListWrap li:first-child {
   border: none;
@@ -368,34 +389,44 @@ header .menu-wrapper .current-menu-item a {
 .memberWrap h2 {
   font-size: 40px;
   line-height: 42px;
-  font-family: "agathoregular";
+  font-family: "agatho-regular";
   font-weight: 300;
-  color: #A00014;
+  color: #a00014;
   margin-bottom: 46px;
 }
 
+.slick-track {
+  display: flex;
+}
+.slick-track .slick-slide {
+  padding: 0 24px;
+  height: inherit !important;
+}
+
 .sliderDetails {
-  background: #A00014;
-  border: 1px solid #F3E5BA;
-  color: #F3E5BA;
-  max-width: 380px;
+  background: #a00014;
+  border: 1px solid #f3e5ba;
+  color: #f3e5ba;
+  height: 100%;
   padding: 27px 23px;
   border-radius: 5px;
   border: 1px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
 }
-.sliderDetails p {
+.sliderDetails .testimonial {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
   text-align: left;
   padding-bottom: 34px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid #F3E5BA;
-  min-height: 140px;
+  margin-bottom: auto;
 }
-.sliderDetails span {
-  font-family: "romelu_vomeluitalic";
+.sliderDetails .name {
+  font-family: "romelu_vomelu_italic";
+  border-top: 1px solid #f3e5ba;
+  padding-top: 18px;
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
@@ -469,8 +500,8 @@ header .menu-wrapper .current-menu-item a {
   margin-top: 48px;
 }
 .joinNowDetail p {
-  color: #A00014;
-  font-family: "romelu_vomeluitalic";
+  color: #a00014;
+  font-family: "romelu_vomelu_italic";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -491,9 +522,9 @@ header .menu-wrapper .current-menu-item a {
 }
 
 .red-btn {
-  background: #A00014;
-  color: #FFFCF6;
-  font-family: "gilroy-bolduploaded_file";
+  background: #a00014;
+  color: #fffcf6;
+  font-family: "gilroy-bold";
   font-size: 18px;
   line-height: 23.44px;
   letter-spacing: 0.005em;
@@ -503,7 +534,7 @@ header .menu-wrapper .current-menu-item a {
   text-transform: capitalize;
 }
 .red-btn:hover {
-  color: #FFFCF6;
+  color: #fffcf6;
 }
 
 .trustWrap {
@@ -517,17 +548,16 @@ header .menu-wrapper .current-menu-item a {
   max-width: 1092px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 38px 55px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 38px 50px;
 }
 
 .trustBox {
-  max-width: 140px;
-  min-height: 148px;
   border-radius: 5px;
   border: 1px;
-  border: 1px solid #5DAA9B;
+  border: 1px solid #5daa9b;
   padding: 14px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -535,17 +565,26 @@ header .menu-wrapper .current-menu-item a {
   text-align: center;
 }
 .trustBox .icon {
-  max-width: 89px;
-  height: 77px;
+  width: 100%;
+  height: 66px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.trustBox .icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   align-items: center;
 }
 .trustBox span {
-  font-family: "agathobold";
+  font-family: "agatho-bold";
   font-size: 20px;
-  color: #A00014;
-  line-height: 21px;
-  min-height: 40px;
+  color: #a00014;
+  line-height: 22px;
+  min-height: 44px;
   display: flex;
   align-items: center;
 }
@@ -557,10 +596,14 @@ header .menu-wrapper .current-menu-item a {
   max-width: 534px;
   margin-left: 40px;
 }
+.meetWrap .layerImageWrap img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 5px;
+}
 .meetWrap .layerImgBg {
-  background: #5DAA9B;
-  bottom: -8px;
-  right: -12px;
+  background: #5daa9b;
+  bottom: -19px;
+  right: -16px;
   height: 98%;
 }
 .meetWrap .meetContent {
@@ -568,8 +611,8 @@ header .menu-wrapper .current-menu-item a {
   margin-left: -8px;
 }
 .meetWrap .meetContent h3 {
-  color: #A00014;
-  font-family: "agatholight";
+  color: #a00014;
+  font-family: "agatho-light";
   font-size: 50px;
   line-height: 52.9px;
   margin-bottom: 46px;
@@ -577,11 +620,11 @@ header .menu-wrapper .current-menu-item a {
 }
 
 .red-sec {
-  border: 2px solid #A00014;
+  border: 2px solid #a00014;
   padding: 17px 48px;
   border-radius: 5px;
-  color: #A00014;
-  font-family: "gilroy-bolduploaded_file";
+  color: #a00014;
+  font-family: "gilroy-bold";
   font-size: 18px;
   line-height: 22.28px;
   letter-spacing: 0.005em;
@@ -589,11 +632,11 @@ header .menu-wrapper .current-menu-item a {
   text-transform: capitalize;
 }
 .red-sec:hover {
-  color: #A00014;
+  color: #a00014;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px 83px;
 }/*# sourceMappingURL=main.css.map */

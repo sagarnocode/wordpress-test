@@ -6,9 +6,9 @@ get_header();
 ?>
 <section>
     <div class="banner">
-        <?php 
+        <?php
         $bannerImage = get_field('banner_image');
-        if( !empty( $bannerImage ) ): ?>
+        if (!empty($bannerImage)): ?>
         <img src="<?php echo esc_url($bannerImage['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
 
@@ -26,11 +26,11 @@ get_header();
             <?php if (have_rows('faq')): ?>
 
             <?php
-            $i = 0;
-            while (have_rows('faq')):
-            the_row(); 
-            $i++;
-            ?>
+                $i = 0;
+                while (have_rows('faq')):
+                    the_row();
+                    $i++;
+                    ?>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -66,19 +66,21 @@ get_header();
     </div>
 </section>
 
-<?php if ( have_rows( 'slider_section' ) ) : ?>
-<?php while ( have_rows( 'slider_section' ) ) : the_row(); ?>
+<?php if (have_rows('slider_section')): ?>
+<?php while (have_rows('slider_section')):
+        the_row(); ?>
 <section class="sliderSection">
     <div class="container">
         <div class="row">
-            <h2><?php the_sub_field( 'main_title' ); ?></h2>
-            <?php if ( have_rows( 'slider_box' ) ) : ?>
+            <h2><?php the_sub_field('main_title'); ?></h2>
+            <?php if (have_rows('slider_box')): ?>
             <div class="sliderTest">
-                <?php while ( have_rows( 'slider_box' ) ) : the_row(); ?>
+                <?php while (have_rows('slider_box')):
+                                the_row(); ?>
                 <div class="col-md-4">
                     <div class="sliderDetails">
-                        <span><?php the_sub_field( 'box_title' ); ?></span>
-                        <p><?php the_sub_field( 'box_description' ); ?></p>
+                        <span><?php the_sub_field('box_title'); ?></span>
+                        <p><?php the_sub_field('box_description'); ?></p>
                     </div>
                 </div>
                 <?php endwhile; ?>
