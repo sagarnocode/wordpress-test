@@ -1,0 +1,12 @@
+.site-footer {
+  width: 100%;
+  max-width: unset;
+}
+.site-footer.no-widgets {
+  margin-top: 88px;
+}
+
+.no-widgets .site-footer {
+  margin-top: 88px;
+  border: 1px solid #a00014;
+}/*# sourceMappingURL=footer.css.map */

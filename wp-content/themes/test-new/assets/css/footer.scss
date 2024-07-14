@@ -1,0 +1,11 @@
+.site-footer {
+  &.no-widgets {
+    margin-top: 88px;
+  }
+  width: 100%;
+  max-width: unset;
+}
+.no-widgets .site-footer {
+  margin-top: 88px;
+  border: 1px solid #a00014;
+}
