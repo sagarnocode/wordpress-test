@@ -62,7 +62,9 @@ get_header();
                 </div>
             </div>
             <div class="col-md-6">
-            
+            <div>
+            <?php echo do_shortcode('[contact-form-7 id="ba4bfc4" title="Contact form 1"]');?>
+            </div>
             </div>
         </div>
     </div>
