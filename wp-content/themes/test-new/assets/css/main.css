@@ -654,7 +654,8 @@ header .menu-wrapper .current-menu-item a {
   .bannerWrap .line {
     margin-bottom: 22px;
   }
-  .bannerWrap h2, .bannerWrap h3 {
+  .bannerWrap h2,
+  .bannerWrap h3 {
     line-height: 38px;
   }
   .bannerWrap h2 {
@@ -686,6 +687,7 @@ header .menu-wrapper .current-menu-item a {
     width: 45px;
     left: -10px;
     top: -36px;
+    background-size: contain;
   }
   .slick-track .slick-slide {
     padding: 0 10px;
@@ -716,5 +718,193 @@ header .menu-wrapper .current-menu-item a {
   .trustContainer {
     gap: 20px;
     max-width: 930px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bannerWrap h3 {
+    margin-right: 0;
+  }
+  .bannerWrap .innerBanner {
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .bannerWrap .bannerImgWrap {
+    margin: 0 auto;
+    padding: 34px;
+  }
+  .borderTitle {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+  .grid {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newAgeWrap h2 {
+    position: relative;
+  }
+  .newAgeWrap h2::before {
+    left: -28px;
+  }
+  .newAgeWrap .row {
+    flex-direction: column-reverse;
+  }
+  .newAgeWrap .newAgeDetail {
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .newAgeWrap .layerImageBox {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .decisionWrap {
+    margin-left: 0;
+  }
+  .joinNow .joinNowDetail {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .joinNow .joinNowDetail p::after {
+    right: -50px;
+  }
+  .trustContainer {
+    max-width: 720px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .meetWrap .row {
+    flex-direction: column-reverse;
+  }
+  .meetWrap .meetContent {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .meetWrap .meetContent h3 {
+    max-width: unset;
+    text-align: center;
+  }
+  .layerImageBox {
+    justify-content: center;
+  }
+  .layerImageBox .layerImageWrap {
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bannerWrap h1.logoText {
+    font-size: 75px;
+    line-height: 48.54px;
+  }
+  .bannerWrap h2 {
+    font-size: 28px;
+  }
+  .bannerWrap h3 {
+    font-size: 24px;
+  }
+  .bannerWrap h2,
+  .bannerWrap h3 {
+    line-height: 30px;
+  }
+  .bannerWrap .bannerImgWrap {
+    padding: 15px;
+  }
+  .bannerWrap .bannerImgWrap .photoInfo {
+    min-height: 78px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+  }
+  .borderTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trustContainer {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .joinNow {
+    margin-bottom: 80px;
+  }
+  .joinNow .borderTitle {
+    margin-bottom: 40px;
+  }
+  .joinNow .joinNowDetail p {
+    margin-bottom: 35px;
+    font-size: 34px;
+    line-height: 45px;
+    text-align: center;
+    max-width: 345px;
+  }
+  .joinNow .joinNowDetail p::after {
+    right: 2px;
+  }
+  .aboutWrap,
+  .newAgeWrap {
+    margin-bottom: 80px;
+  }
+  .layerImageBox {
+    max-width: 96%;
+  }
+  .decisionWrap {
+    padding-left: 20px;
+    max-width: unset;
+  }
+  .trustWrap {
+    margin-bottom: 80px;
+  }
+  .trustWrap .borderTitle {
+    margin-bottom: 40px;
+  }
+  .newAgeWrap p {
+    margin-bottom: 40px;
+  }
+  .newAgeWrap h2 {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .newAgeWrap h2::before {
+    left: -15px;
+    height: 39px;
+    width: 39px;
+    background-repeat: no-repeat;
+  }
+  .slick-track .slick-slide {
+    padding: 0 15px;
+  }
+  .checkListWrap p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .memberWrap h2 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .sliderSection {
+    margin-bottom: 90px;
   }
 }/*# sourceMappingURL=main.css.map */

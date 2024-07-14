@@ -4,17 +4,27 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplaySpeed: 2000,
         infinite: false,
-        //swipeToSlide: true,
-        //draggable: true,
         centerMode: false,
-        //arrows: false,
-        //variableWidth: true,
-    });
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            
+          ],
+    })
+    
 
 
-    // $('.carousel').slick({
-    //     slidesToShow: 3,
-    //     dots: true,
-    //     centerMode: true,
-    // });
+    
 });

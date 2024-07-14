@@ -1,6 +1,7 @@
 @font-face {
   font-family: "romelu_vomelu_italic";
-  src: url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff2") format("woff2"),
     url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "gilroy-regular";
-  src: url("../fonts/gilroy-regular-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/gilroy-regular-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: "gilroy-semibold";
-  src: url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -24,7 +27,8 @@
 
 @font-face {
   font-family: "gilroy-bold";
-  src: url("../fonts/gilroy-bold-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/gilroy-bold-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -32,7 +36,8 @@
 
 @font-face {
   font-family: "gilroy-light";
-  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -40,7 +45,8 @@
 
 @font-face {
   font-family: "agatho-regular";
-  src: url("../fonts/agatho_regular-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/agatho_regular-webfont.woff2") format("woff2"),
     url("../fonts/agatho_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -48,7 +54,8 @@
 
 @font-face {
   font-family: "agatho-light";
-  src: url("../fonts/agatho__light-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/agatho__light-webfont.woff2") format("woff2"),
     url("../fonts/agatho__light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -56,7 +63,8 @@
 
 @font-face {
   font-family: "agatho-bold";
-  src: url("../fonts/agatho__bold-webfont.woff2") format("woff2"),
+  src:
+    url("../fonts/agatho__bold-webfont.woff2") format("woff2"),
     url("../fonts/agatho__bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -750,7 +758,6 @@ header {
   gap: 30px 83px;
 }
 
-
 @media only screen and (max-width: 1199px) {
   header .menu-wrapper li a {
     padding-left: 12px !important;
@@ -765,7 +772,8 @@ header {
     .line {
       margin-bottom: 22px;
     }
-    h2,h3 {
+    h2,
+    h3 {
       line-height: 38px;
     }
     h2 {
@@ -797,6 +805,7 @@ header {
       width: 45px;
       left: -10px;
       top: -36px;
+      background-size: contain;
     }
   }
   .slick-track .slick-slide {
@@ -826,11 +835,215 @@ header {
         font-size: 42px;
         line-height: 48.9px;
         margin-bottom: 30px;
-        }
+      }
     }
   }
   .trustContainer {
     gap: 20px;
     max-width: 930px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bannerWrap {
+    h3 {
+      margin-right: 0;
+    }
+    .innerBanner {
+      max-width: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .bannerImgWrap {
+      margin: 0 auto;
+      padding: 34px;
+      //max-width: unset;
+    }
+  }
+  .borderTitle {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+  .grid {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newAgeWrap {
+    h2 {
+      position: relative;
+      &::before {
+        left: -28px;
+      }
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+    .newAgeDetail {
+      max-width: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .layerImageBox {
+      justify-content: center;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  .decisionWrap {
+    margin-left: 0;
+  }
+  .joinNow {
+    .joinNowDetail {
+      margin-top: 72px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      p {
+        &::after {
+          right: -50px;
+        }
+      }
+    }
+  }
+  .trustContainer {
+    max-width: 720px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .meetWrap {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .meetContent {
+      margin-top: 72px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      h3 {
+        max-width: unset;
+        text-align: center;
+      }
+    }
+  }
+  .layerImageBox {
+    justify-content: center;
+    .layerImageWrap {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bannerWrap {
+    h1.logoText {
+      font-size: 75px;
+      line-height: 48.54px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h2,
+    h3 {
+      line-height: 30px;
+    }
+    .bannerImgWrap {
+      padding: 15px;
+      .photoInfo {
+        min-height: 78px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 20px;
+      }
+    }
+  }
+  .borderTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trustContainer {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .joinNow {
+    margin-bottom: 80px;
+    .borderTitle {
+      margin-bottom: 40px;
+    }
+    .joinNowDetail p {
+      margin-bottom: 35px;
+      font-size: 34px;
+      line-height: 45px;
+      text-align: center;
+      max-width: 345px;
+      &::after {
+        right: 2px;
+      }
+    }
+  }
+  .aboutWrap,
+  .newAgeWrap {
+    margin-bottom: 80px;
+  }
+  .layerImageBox {
+    max-width: 96%;
+  }
+  .decisionWrap {
+    padding-left: 20px;
+    max-width: unset;
+  }
+  .trustWrap {
+    margin-bottom: 80px;
+    .borderTitle {
+      margin-bottom: 40px;
+    }
+  }
+  .newAgeWrap {
+    p {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 46px;
+      &::before {
+        left: -15px;
+        height: 39px;
+        width: 39px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .slick-track .slick-slide {
+    padding: 0 15px;
+  }
+  .checkListWrap p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .memberWrap h2 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .sliderSection {
+    margin-bottom: 90px;
   }
 }

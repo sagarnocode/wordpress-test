@@ -11,7 +11,7 @@ get_header();
 <section class="bannerWrap">
     <div class="container">
         <div class="row bannerContent">
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="innerBanner">
                     <!-- <h1 class="mainLogo">
                                 <?php $banner_logo = get_sub_field('banner_logo'); ?>
@@ -34,7 +34,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <div class="bannerImgWrap">
                     <div class="mainImg">
                         <?php $banner_main_image = get_sub_field('banner_main_image'); ?>
@@ -91,7 +91,7 @@ get_header();
 <section class="newAgeWrap">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="newAgeDetail">
                     <h2><?php the_sub_field('age_title'); ?></h2>
                     <p><?php the_sub_field('age_detail'); ?></p>
@@ -117,7 +117,7 @@ get_header();
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="layerImageBox">
                     <div class="layerImageWrap">
                         <?php $new_age_image = get_sub_field('new_age_image'); ?>
@@ -177,7 +177,7 @@ get_header();
     </p>
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-lg-7">
                 <div class="layerImageBox decisionWrap">
                     <div class="layerImageWrap leftlayerBox">
                         <?php $find_love_image = get_sub_field('find_love_image'); ?>
@@ -190,7 +190,7 @@ get_header();
 
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="joinNowDetail">
                     <p><?php the_sub_field('join_now_details'); ?></p>
                     <a href="" class="red-btn"><?php the_sub_field('join_now_btn'); ?></a>
@@ -229,107 +229,7 @@ get_header();
         <?php // no rows found ?>
         <?php endif; ?>
     </div>
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="trustBox">
-                    <div class="icon">
-                        <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (1).png" />
-                </div>
-                <span>Start-up Founders</span>
-                </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (1).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trustBox">
-                        <div class="icon">
-                            <img src="<?php echo $_asset_path ?>/assets/images/Layer_1 (2).png" />
-                        </div>
-                        <span>Entrepreneurs</span>
-                    </div>
-                </div>
-                </div>
-
-                </div> -->
+    
 </section>
 <?php endwhile; ?>
 <?php endif; ?>
@@ -340,7 +240,7 @@ get_header();
 <section class="meetWrap">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="meetContent">
                     <h3><?php the_sub_field('meet_title'); ?></h3>
                     <div class="btn-wrap">
@@ -349,7 +249,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="layerImageBox">
                     <div class="layerImageWrap">
                         <?php $meet_image = get_sub_field('meet_image'); ?>
