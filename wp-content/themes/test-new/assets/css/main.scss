@@ -749,3 +749,88 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 83px;
 }
+
+
+@media only screen and (max-width: 1199px) {
+  header .menu-wrapper li a {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    font-size: 14px !important;
+  }
+  .bannerWrap {
+    h1.logoText {
+      font-size: 108px;
+      line-height: 81.54px;
+    }
+    .line {
+      margin-bottom: 22px;
+    }
+    h2,h3 {
+      line-height: 38px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 28px;
+      margin-right: 28px;
+    }
+  }
+  .btn-wrap {
+    margin-left: -20px;
+    a {
+      margin-left: 20px;
+      min-width: 140px;
+    }
+  }
+  .bannerImgWrap {
+    padding: 25px;
+  }
+  .grid {
+    gap: 30px;
+  }
+  .newAgeWrap h2 {
+    font-size: 38px;
+    line-height: 42px;
+    &::before {
+      height: 45px;
+      width: 45px;
+      left: -10px;
+      top: -36px;
+    }
+  }
+  .slick-track .slick-slide {
+    padding: 0 10px;
+  }
+  .joinNow {
+    .row {
+      align-items: center;
+    }
+    .joinNowDetail {
+      margin-top: 0;
+      margin-left: 40px;
+      p {
+        margin-bottom: 35px;
+        font-size: 34px;
+        line-height: 45px;
+      }
+    }
+  }
+  .meetWrap {
+    .row {
+      align-items: center;
+    }
+    .meetContent {
+      margin: 0;
+      h3 {
+        font-size: 42px;
+        line-height: 48.9px;
+        margin-bottom: 30px;
+        }
+    }
+  }
+  .trustContainer {
+    gap: 20px;
+    max-width: 930px;
+  }
+}
