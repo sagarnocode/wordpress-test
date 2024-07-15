@@ -13,6 +13,16 @@
     font-weight: 300;
     line-height: 74.06px;
     margin-bottom: 24px;
+    &::after {
+      content: "";
+      background: url("../images/story.png");
+      height: 104px;
+      width: 104px;
+      display: block;
+      float: right;
+      margin-right: 60px;
+      margin-top: -35px;
+    }
   }
   p {
     font-family: "gilroy-semibold";
@@ -36,7 +46,6 @@
 .ourStory .storyTtitle {
   //display: flex;
 }
-
 
 .letsTalk {
   .borderTitle {
@@ -64,6 +73,10 @@
   .layerImageBox {
     margin-left: 29px;
     justify-content: flex-start;
+    img {
+      border-radius: 5px;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    }
   }
   .layerImgBg {
     left: -20px;
@@ -116,6 +129,7 @@
   input:not([type="submit"]) {
     border: none;
     border-bottom: 1px solid #f3e5ba;
+    color: #f3e5ba;
     background: transparent;
     width: 100%;
     font-family: "DM Sans", sans-serif;
@@ -126,6 +140,10 @@
     margin: 0;
     &::placeholder {
       color: #f3e5ba;
+    }
+    &:active,
+    &:focus {
+      outline: none;
     }
   }
   .inputWrap {
@@ -173,6 +191,20 @@
       margin-left: 0;
       margin-right: 0;
     }
+    .storyTtitle h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      &::after {
+        height: 70px;
+        width: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 0;
+      }
+    }
   }
   .letsTalk {
     .description,
@@ -188,48 +220,51 @@
       justify-content: center;
       margin-left: 0;
       margin-right: 0;
-      
     }
     .formWrap {
       max-width: unset;
       margin-left: 0;
       margin-right: 0;
+      margin-top: 50px;
       .submit-btn {
         // display: flex;
         // justify-content: center;
       }
     }
   }
-  
 }
 @media only screen and (max-width: 767px) {
-.ourStory {
-  margin-bottom: 80px;
-  padding-top: 25px;
-  .storyTtitle h3 {
-    font-size: 50px;
-    margin-bottom: 15px;
+  .ourStory {
+    margin-bottom: 80px;
+    padding-top: 25px;
+    .storyTtitle h3 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20.2px;
+    }
   }
-  p {
-    font-size: 14px;
-    line-height: 20.2px;
+  .letsTalk {
+    .borderTitle {
+      margin-bottom: 80px;
+    }
+    .description {
+      padding: 0;
+    }
+    .layerImgBg {
+      left: -12px;
+      bottom: -12px;
+    }
   }
-}
-.letsTalk{
-   .borderTitle {
-margin-bottom: 80px;
-}
-.description {
-  padding: 0;
-}
-}
-.formWrap {
-  padding: 20px 15px;
-  .inputWrap {
-    margin-bottom: 12px;
+  .formWrap {
+    padding: 20px 15px;
+    .inputWrap {
+      margin-bottom: 12px;
+    }
+    input:not([type="submit"]) {
+      padding: 8px;
+    }
   }
-  input:not([type=submit]) {
-    padding: 8px;
-  }
-}
 }
