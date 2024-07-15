@@ -1,58 +1,214 @@
 .ourStory {
-  padding-top: 65px;
-  margin-bottom: 86px;
-  color: #A00014;
+  padding-top: 96px;
+  margin-bottom: 93px;
+  color: #a00014;
 }
-
 .ourStory .storyContent {
   max-width: 480px;
+  margin-left: 25px;
+  margin-top: 52px;
 }
-
-.ourStory .storyTtitle {
-  display: flex;
-}
-
 .ourStory .storyTtitle h3 {
   font-family: "agatholight";
   font-size: 70px;
   font-weight: 300;
   line-height: 74.06px;
-  text-align: left;
-  margin-bottom: 31px;
+  margin-bottom: 24px;
 }
-
 .ourStory p {
-  font-family: "gilroy-semibolduploaded_file";
+  font-family: "gilroy-semibold";
   font-size: 18px;
-  font-weight: 400;
   line-height: 25.2px;
-  text-align: left;
   margin-bottom: 22px;
 }
-
 .ourStory .layerImageBox {
   max-width: 552px;
+  margin-left: 52px;
+  margin-right: -10px;
+}
+.ourStory .layerImgBg {
+  width: 95%;
+  height: 95%;
+  bottom: -9px;
+  right: -10px;
 }
 
+.letsTalk .borderTitle {
+  margin-bottom: 90px;
+}
 .letsTalk h2 {
   font-family: "agatholight";
   font-size: 50px;
   font-weight: 300;
   line-height: 52.9px;
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 }
-
 .letsTalk .description {
-  color: #A00014;
-  margin-bottom: 70px;
-  max-width: 447px;
-  margin-left: 28px;
+  color: #a00014;
+  margin-bottom: 41px;
+  max-width: 456px;
+  margin-left: 26px;
 }
-
 .letsTalk .description p {
-  font-family: "DM Sans", sans-serif;
+  font-family: "gilroy-semibold";
   font-size: 18px;
-  font-weight: 400;
   line-height: 23.44px;
   margin-bottom: 0;
+}
+.letsTalk .layerImageBox {
+  margin-left: 29px;
+  justify-content: flex-start;
+}
+.letsTalk .layerImgBg {
+  left: -20px;
+  width: 98%;
+  bottom: -16px;
+  height: 95%;
+}
+.letsTalk .formWrap {
+  margin-right: -20px;
+  margin-left: -10px;
+  margin-top: 23px;
+}
+
+.greenBox .layerImgBg {
+  background: #5daa9b;
+}
+
+.formWrap {
+  background: #a00014;
+  border-radius: 5px;
+  border: 1px solid #f3e5ba;
+  max-width: 620px;
+  padding: 40px;
+}
+.formWrap label {
+  color: #f3e5ba;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-transform: capitalize;
+  --global--admin-bar--height: 0;
+}
+.formWrap label span {
+  display: block;
+  margin-top: 6px;
+}
+.formWrap .wpcf7-not-valid-tip {
+  color: #5daa9b;
+}
+.formWrap .wpcf7-response-output {
+  color: #5daa9b;
+  border-color: #5daa9b !important;
+}
+.formWrap input:not([type=submit]) {
+  border: none;
+  border-bottom: 1px solid #f3e5ba;
+  background: transparent;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  min-height: 20px;
+  padding: 11px 12px;
+  margin: 0;
+}
+.formWrap input:not([type=submit])::-moz-placeholder {
+  color: #f3e5ba;
+}
+.formWrap input:not([type=submit])::placeholder {
+  color: #f3e5ba;
+}
+.formWrap .inputWrap {
+  margin-bottom: 16px;
+}
+.formWrap .inputWrap p {
+  margin-bottom: 0;
+}
+.formWrap .inputWrap br {
+  margin-bottom: 0;
+}
+.formWrap .submit-btn [type=submit] {
+  border: 1px solid #f3e5ba;
+  background-color: #f3e5ba !important;
+  color: #a00014 !important;
+  font-family: "gilroy-semibold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  padding: 17px;
+  border-radius: 5px;
+  min-width: 160px;
+  text-align: center;
+  height: 56px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .ourStory .storyContent {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .ourStory .storyContent {
+    max-width: unset;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ourStory .layerImageBox {
+    max-width: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .letsTalk .description,
+  .letsTalk .layerImageWrap {
+    max-width: unset;
+  }
+  .letsTalk .description {
+    margin: 0 0 30px 0;
+    text-align: center;
+    padding: 0 80px;
+  }
+  .letsTalk .layerImageBox {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .letsTalk .formWrap {
+    max-width: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ourStory {
+    margin-bottom: 80px;
+    padding-top: 25px;
+  }
+  .ourStory .storyTtitle h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .ourStory p {
+    font-size: 14px;
+    line-height: 20.2px;
+  }
+  .letsTalk .borderTitle {
+    margin-bottom: 80px;
+  }
+  .letsTalk .description {
+    padding: 0;
+  }
+  .formWrap {
+    padding: 20px 15px;
+  }
+  .formWrap .inputWrap {
+    margin-bottom: 12px;
+  }
+  .formWrap input:not([type=submit]) {
+    padding: 8px;
+  }
 }/*# sourceMappingURL=our-story.css.map */

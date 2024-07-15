@@ -1,4 +1,3 @@
-
 <?php $_asset_path = get_stylesheet_directory_uri(); ?>
 <?php
 /**
@@ -6,68 +5,82 @@
  */
 get_header();
 ?>
-
-<section class="ourStory">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="storyContent">
-                    <div class="storyTtitle">
-                        <h3>Our Story</h3>
-                        <span class="storyIcon">
-                            <img src="" />
-                        </span>
+<?php if (have_rows('our_story')): ?>
+    <?php while (have_rows('our_story')):
+        the_row(); ?>
+        <section class="ourStory">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="storyContent">
+                            <div class="storyTtitle">
+                                <h3><?php the_sub_field('our_story_title'); ?></h3>
+                            </div>
+                            <p><?php the_sub_field('story_details'); ?>
+                            </p>
+                            <div class="storyLogo">
+                                <?php $story_logo = get_sub_field('story_logo'); ?>
+                                <?php if ($story_logo) { ?>
+                                    <img src="<?php echo $story_logo['url']; ?>" alt="<?php echo $story_logo['alt']; ?>" />
+                                <?php } ?>
+                            </div>
+                        </div>
                     </div>
-                    <p>Stemming from the founder’s own experience navigating the modern dating landscape, Couplet was
-                        created to address the needs of the discerning single Indian. Led by a seasoned Talent Architect
-                        with over a decade of expertise in understanding people, we offer a streamlined approach to
-                        finding love, all while preserving your authenticity. Backed by a robust team, Couplet ensures a
-                        seamless experience for all our valued members.
-                    </p>
-                    <div class="storyLogo">
-                        <img src="" />
+                    <div class="col-lg-6">
+                        <div class="layerImageBox greenBox">
+                            <div class="layerImageWrap">
+                                <?php $story_right_image = get_sub_field('story_right_image'); ?>
+                                <?php if ($story_right_image) { ?>
+                                    <img src="<?php echo $story_right_image['url']; ?>"
+                                        alt="<?php echo $story_right_image['alt']; ?>" />
+                                <?php } ?>
+                                <div class="layerImgBg"></div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="layerImageBox">
-                    <div class="layerImageWrap">
-                        <img src="http://localhost/couplet/wp-content/uploads/2024/07/Mask-group-15.png" alt="">
-                        <div class="layerImgBg"></div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+<?php if (have_rows('lets_talk_section')): ?>
+    <?php while (have_rows('lets_talk_section')):
+        the_row(); ?>
+        <section class="letsTalk">
+            <p class="borderTitle">
+                <?php the_sub_field('main_title'); ?>
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="description">
+                            <h2>
+                                <?php the_sub_field('lets_talk_title'); ?>
+                            </h2>
+                            <p><?php the_sub_field('lets_talk_details'); ?></p>
+                        </div>
+                        <div class="layerImageBox decisionWrap">
+                            <div class="layerImageWrap leftlayerBox">
+                                <?php $lets_talk_image = get_sub_field('lets_talk_image'); ?>
+                                <?php if ($lets_talk_image) { ?>
+                                    <img src="<?php echo $lets_talk_image['url']; ?>"
+                                        alt="<?php echo $lets_talk_image['alt']; ?>" />
+                                <?php } ?>
+                                <div class="layerImgBg"></div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="letsTalk">
-    <p class="borderTitle">
-        Embrace connection beyond the screen
-    </p>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="description">
-                    <h2>Let’s Talk!</h2>
-                    <p>Drop us a line at hello@couplet.in or leave behind your details and we will give you a call.</p>
-                </div>
-                <div class="layerImageBox decisionWrap">
-                    <div class="layerImageWrap leftlayerBox">
-                        <img src="http://localhost/couplet/wp-content/uploads/2024/07/img-1.png" alt="find love">
-                        <div class="layerImgBg"></div>
+                    <div class="col-lg-6">
+                        <div class="formWrap">
+                            <?php echo do_shortcode('[contact-form-7 id="ba4bfc4" title="Contact form 1"]'); ?>
+                            <?php the_sub_field('form_wrap'); ?>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="col-md-6">
-            <div>
-            <?php echo do_shortcode('[contact-form-7 id="ba4bfc4" title="Contact form 1"]');?>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
