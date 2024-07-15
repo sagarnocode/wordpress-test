@@ -24,7 +24,11 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 <div class="site-branding">
 
 
-    <div class="site-logo"><img src="<?php echo $_asset_path ?>/assets/images/couplet-logo-yellow.svg" /></div>
+    <div class="site-logo">
+        <img src="<?php echo $_asset_path ?>/assets/images/couplet-logo-yellow.svg" />
+        <img class="yellow" src="<?php echo $_asset_path ?>/assets/images/couplet-logo-yellow.svg" />
+        <img class="red" src="<?php echo $_asset_path ?>/assets/images/couplet-logo-red.svg" />
+    </div>
 
 
     <?php if ($blog_info): ?>
