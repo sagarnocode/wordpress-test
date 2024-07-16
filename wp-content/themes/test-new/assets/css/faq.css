@@ -1,10 +1,14 @@
 .faqWrap {
-  padding-top: 130px;
+  padding-top: 101px;
+}
+.faqWrap .accordion {
+  margin-right: -73px;
+  margin-left: 32px;
 }
 
 .faqDescrption {
   max-width: 427px;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 .faqDescrption h2 {
   color: #a00014;
@@ -12,7 +16,7 @@
   font-size: 48px;
   line-height: 57.6px;
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 .faqDescrption p {
   font-family: "gilroy-regular";
@@ -29,25 +33,20 @@
   border: none !important;
   color: #a00014 !important;
   text-align: left;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
   text-align: left;
   font-family: "gilroy-bold";
   padding: 0;
   position: relative;
+  padding-right: 40px;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("../images/minus.png");
 }
-.accordion-button h2 {
-  margin-bottom: 0;
-}
 .accordion-button::after {
   content: "";
-  right: 10px;
+  right: 11px;
   height: 32px;
-  top: -2px;
+  top: -1px;
   width: 32px;
   background-image: url("../images/Plus.png");
   position: absolute;
@@ -59,14 +58,24 @@
   color: #a00014 !important;
   border: 1px solid rgba(93, 170, 155, 0.8);
   margin-bottom: 16px;
-  padding: 12px 24px 12px 21px;
+  padding: 8px 11px 8px 23px;
   border-radius: 5px;
+}
+.accordion-item h2 {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 54px;
 }
 
 .accordion-body {
   font-family: "gilroy-regular";
   max-width: 517px;
   padding-top: 20px;
+  padding-bottom: 26px;
 }
 .accordion-body p {
   font-size: 18px;
@@ -80,4 +89,32 @@
 }
 .faqContact .red-sec {
   padding: 15px 29px;
+}
+
+@media only screen and (max-width: 1299px) {
+  .faqWrap .accordion {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .faqWrap .accordion-body {
+    max-width: 600px;
+  }
+  .faqWrap .accordion {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faqDescrption {
+    max-width: unset;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .accordion-item h2 {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 44px;
+  }
 }/*# sourceMappingURL=faq.css.map */
