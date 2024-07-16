@@ -1,7 +1,6 @@
 @font-face {
   font-family: "romelu_vomelu_italic";
-  src:
-    url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff2") format("woff2"),
+  src: url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff2") format("woff2"),
     url("../fonts/romeluvomeluitalic-k7jvd-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "gilroy-regular";
-  src:
-    url("../fonts/gilroy-regular-webfont.woff2") format("woff2"),
+  src: url("../fonts/gilroy-regular-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: "gilroy-semibold";
-  src:
-    url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"),
+  src: url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -27,8 +24,7 @@
 
 @font-face {
   font-family: "gilroy-bold";
-  src:
-    url("../fonts/gilroy-bold-webfont.woff2") format("woff2"),
+  src: url("../fonts/gilroy-bold-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -36,8 +32,7 @@
 
 @font-face {
   font-family: "gilroy-light";
-  src:
-    url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
+  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -45,8 +40,7 @@
 
 @font-face {
   font-family: "agatho-regular";
-  src:
-    url("../fonts/agatho_regular-webfont.woff2") format("woff2"),
+  src: url("../fonts/agatho_regular-webfont.woff2") format("woff2"),
     url("../fonts/agatho_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -54,8 +48,7 @@
 
 @font-face {
   font-family: "agatho-light";
-  src:
-    url("../fonts/agatho__light-webfont.woff2") format("woff2"),
+  src: url("../fonts/agatho__light-webfont.woff2") format("woff2"),
     url("../fonts/agatho__light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -63,8 +56,7 @@
 
 @font-face {
   font-family: "agatho-bold";
-  src:
-    url("../fonts/agatho__bold-webfont.woff2") format("woff2"),
+  src: url("../fonts/agatho__bold-webfont.woff2") format("woff2"),
     url("../fonts/agatho__bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -113,50 +105,146 @@ header {
 
   .site-logo {
     margin: 0;
+    position: relative;
+
+    img {
+      opacity: 0;
+      transition: all 1s;
+      max-width: 100%;
+    }
+  }
+  .site-logo .yellow,
+  .site-logo .red {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
-  .menu-wrapper {
-    li {
-      a {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        font-family: "gilroy-regular" !important;
-        font-size: 20px !important;
-        font-weight: 500 !important;
-        line-height: 24.76px !important;
-        color: #f1e5bf !important;
+  header
+    .navbarOpen
+    .primary-navigation
+    > div
+    > ul.menu-wrapper
+    > li.menu-item
+    > a {
+    color: #a00014;
+  }
+  // .primary-navigation .primary-menu-container > ul > .menu-item > a
+  .primary-navigation > div > ul.menu-wrapper {
+    > li.menu-item {
+      margin: 0 20px;
+
+      > a {
+        padding: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: "gilroy-regular";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        // color: #f1e5bf;
         text-transform: capitalize;
 
         &:hover,
         &:active,
         &:focus {
-          color: #f1e5bf;
-          text-decoration: none !important;
-          outline: none !important;
-          background: transparent !important;
+          // color: #f1e5bf;
+          text-decoration: none;
+          outline: none;
+          background: transparent;
         }
       }
 
-      &:last-child {
-        margin-left: 67px;
+      &.contactUs {
+        margin-left: 47px;
+        margin-right: 0;
 
         a {
-          background: #f3e5ba !important;
-          color: #a00014 !important;
-          padding: 13px 32px !important;
+          // color: #a00014;
+          padding: 13px 32px;
           border-radius: 5px;
+          line-height: 22px;
+          font-family: "gilroy-semibold";
+        }
+      }
+      &.current-menu-item {
+        a {
+          // font-weight: 600 ;
+          text-decoration: none;
+          font-family: "gilroy-semibold";
         }
       }
     }
-
-    .current-menu-item {
-      a {
-        font-weight: 600 !important;
-        text-decoration: none !important;
-        font-family: "gilroy-semibold" !important;
-      }
+    > li.menu-item:first-child {
+      margin-left: 0;
     }
   }
+  .primary-navigation .primary-menu-container {
+    margin: 0;
+  }
+
+  .primary-navigation a,
+  .primary-navigation a:hover,
+  .primary-navigation a:link,
+  .primary-navigation a:visited {
+    color: #a00014;
+    transition: all 1s;
+  }
+
+  .navbarOpen .primary-navigation a {
+    color: #a00014;
+  }
+
+  .primary-navigation .contactUs a {
+    background: #a00014;
+    color: #f3e5ba;
+  }
+}
+.topBanner .primary-navigation a,
+.topBanner .primary-navigation a:hover,
+.topBanner .primary-navigation a:link,
+.topBanner .primary-navigation a:visited {
+  color: #f1e5bf;
+}
+.topBanner .navbarOpen .primary-navigation a,
+.topBanner .navbarOpen .primary-navigation a:hover,
+.topBanner .navbarOpen .primary-navigation a:link,
+.topBanner .navbarOpen .primary-navigation a:visited {
+  color: #a00014;
+}
+
+.topBanner .primary-navigation .contactUs a,
+.topBanner .navbarOpen .primary-navigation .contactUs a {
+  color: #a00014;
+  background: #f3e5ba;
+}
+.navbarOpen .primary-navigation .contactUs a {
+  background: #a00014;
+  color: #f3e5ba;
+
+  &:hover {
+    color: #f3e5ba;
+  }
+}
+.navbar .site-logo .red {
+  opacity: 1;
+}
+.topBanner .navbar .site-logo .yellow {
+  opacity: 1;
+}
+.topBanner .navbar .site-logo .red {
+  opacity: 0;
+}
+.navbar.navbarOpen .site-logo .yellow {
+  opacity: 0;
+}
+.navbar.navbarOpen .site-logo .red {
+  opacity: 1;
+}
+.navbarOpen {
+  background-color: #fffcf6;
+  border-bottom: 1px solid #a00014;
 }
 
 //styleName: DM Sans/Body/Bold/P1;
@@ -759,10 +847,24 @@ header {
 }
 
 @media only screen and (max-width: 1199px) {
-  header .menu-wrapper li a {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    font-size: 14px !important;
+  header .primary-navigation > div > ul.menu-wrapper > li.menu-item {
+    // padding-left: 12px !important;
+    // padding-right: 12px !important;
+    margin: 0 12px;
+    a {
+      font-size: 18px !important;
+    }
+  }
+  header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs {
+    margin-left: 12px;
+  }
+  header
+    .primary-navigation
+    > div
+    > ul.menu-wrapper
+    > li.menu-item.contactUs
+    a {
+    padding: 13px 22px;
   }
   .bannerWrap {
     h1.logoText {
@@ -844,6 +946,78 @@ header {
   }
 }
 @media only screen and (max-width: 991px) {
+  header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 158px;
+  }
+  header .primary-navigation .primary-menu-container {
+    padding: 0;
+    padding-top: 20px;
+  }
+  header .primary-navigation > div > ul.menu-wrapper > li.menu-item > a {
+    padding: 8px;
+  }
+  header .primary-navigation > div > ul.menu-wrapper > li.menu-item {
+    margin: 0px;
+  }
+  .primary-navigation {
+    position: static;
+  }
+  .primary-navigation > .primary-menu-container {
+    height: auto;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    background: transparent;
+    transform: none;
+  }
+  .primary-navigation > div > .menu-wrapper {
+    padding-bottom: 0;
+  }
+
+  .topBanner .navbar-toggler,
+  .topBanner .navbar-toggler:not(:hover):not(:active):not(.has-background) {
+    background: #f3e5ba;
+    border: none;
+    transition: all 1s;
+    svg,
+    svg path {
+      fill: #a00014;
+    }
+    &:hover {
+      background: #f3e5ba;
+    }
+  }
+  .navbarOpen .navbar-toggler,
+  .navbarOpen
+    button.navbar-toggler:not(:hover):not(:active):not(.has-background),
+  .navbar-toggler,
+  button.navbar-toggler:not(:hover):not(:active):not(.has-background) {
+    background: #a00014;
+    svg,
+    svg path {
+      fill: #f3e5ba;
+    }
+    &:hover {
+      background: #a00014;
+    }
+  }
+  .navbar-collapse.show {
+    // position: absolute;
+    // top: 0;
+    // width: 250px;
+    // background: white;
+    // right: 0px;
+    // height: 100vh;
+    // position: absolute;
+  }
+  .primary-navigation {
+    margin-left: 0;
+  }
+  .primary-navigation > div > .menu-wrapper {
+    flex-direction: column;
+  }
   .bannerWrap {
     h3 {
       margin-right: 0;
@@ -939,6 +1113,9 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
+  header .site-logo {
+    width: 125px;
+  }
   .bannerWrap {
     h1.logoText {
       font-size: 75px;
