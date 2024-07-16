@@ -1,0 +1,75 @@
+.faqWrap {
+  padding-top: 130px;
+}
+
+.faqDescrption {
+  max-width: 427px;
+  margin-top: 35px;
+  h2 {
+    color: #a00014;
+    font-family: "agatho-light";
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: "gilroy-semibold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #a00014;
+    margin-bottom: 37px;
+  }
+}
+.accordion-button {
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  color: #a00014 !important;
+  text-align: left;  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  font-family: "gilroy-bold";
+  padding: 0;
+  position: relative;
+  h2 {    
+    margin-bottom: 0;
+  }
+  &::after {
+    content: "";    
+    right: 10px;  
+    height: 32px;
+    top: -2px;
+    width: 32px;
+    background-image: url("../images/Plus.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  &.collapsed::after {
+    background-image: url("../images/minus.png");
+    
+  }
+  
+}
+.accordion-item {
+  color: #a00014 !important;
+  border: 1px solid #5daa9bcc;
+  margin-bottom: 16px;
+  padding: 12px 24px 12px 21px;
+  border-radius: 5px;
+}
+.accordion-body {
+  font-family: "gilroy-regular";
+  max-width: 517px;
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+  }
+}
