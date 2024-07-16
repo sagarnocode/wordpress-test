@@ -15,9 +15,8 @@
   margin-bottom: 24px;
 }
 .faqDescrption p {
-  font-family: "gilroy-semibold";
+  font-family: "gilroy-regular";
   font-size: 18px;
-  font-weight: 400;
   line-height: 27px;
   text-align: left;
   color: #a00014;
@@ -38,6 +37,9 @@
   padding: 0;
   position: relative;
 }
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/minus.png");
+}
 .accordion-button h2 {
   margin-bottom: 0;
 }
@@ -52,9 +54,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.accordion-button.collapsed::after {
-  background-image: url("../images/minus.png");
-}
 
 .accordion-item {
   color: #a00014 !important;
@@ -67,9 +66,18 @@
 .accordion-body {
   font-family: "gilroy-regular";
   max-width: 517px;
+  padding-top: 20px;
 }
 .accordion-body p {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 0;
+}
+
+.faqContact {
+  display: flex;
+  position: relative;
+}
+.faqContact .red-sec {
+  padding: 15px 29px;
 }/*# sourceMappingURL=faq.css.map */

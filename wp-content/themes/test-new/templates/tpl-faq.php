@@ -5,63 +5,58 @@
  */
 get_header();
 ?>
-
+<?php if ( have_rows( 'faq_section' ) ) : ?>
+<?php while ( have_rows( 'faq_section' ) ) : the_row(); ?>
 <section class="faqWrap">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
                 <div class="faqDescrption">
-                    <h2>FAQs</h2>
-                    <p>Have a question about finding love with Couplet? We’ve got you covered!</p>
+                    <h2><?php the_sub_field( 'faq_title' ); ?></h2>
+                    <p><?php the_sub_field( 'faq_description' ); ?></p>
+                    
+                    <div class="faqContact">
                     <a href="" class="red-sec">
-                        Contact
-                    </a>
+                    <?php the_sub_field( 'faq_contact' ); ?> </a>
+                    </div>
+                   
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="accordion" id="accordionExample">
+                    <?php if ( have_rows( 'faq_list_data' ) ) : ?>
+
+                    <?php
+                        $i =0;
+                        while( have_rows( 'faq_list_data' ) ) : the_row();
+                        $i++
+                        ?>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse<?php echo $i; ?>" aria-expanded="true" aria-controls="collapseOne">
+                                <?php the_sub_field( 'question' ); ?>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                            <p>
-                                    At Couplet, we promote intentional dating. We focus on finding a quality match that
-                                    feels right, rather than quantity. Once you’ve had a successful first date, we’ll
-                                    pause the search and resume when you’re ready to move on.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                Accordion Item #1
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        <div id="collapse<?php echo $i; ?>" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
-                                    At Couplet, we promote intentional dating. We focus on finding a quality match that
-                                    feels right, rather than quantity. Once you’ve had a successful first date, we’ll
-                                    pause the search and resume when you’re ready to move on.
+                                    <?php the_sub_field( 'answer' ); ?>
                                 </p>
                             </div>
                         </div>
                     </div>
 
+                    <?php endwhile; ?>
+                    <?php else : ?>
+                    <?php // no rows found ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+<?php endwhile; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
