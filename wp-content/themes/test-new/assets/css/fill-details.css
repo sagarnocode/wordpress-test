@@ -1,0 +1,124 @@
+.detailsFormWrap {
+  border: 1px solid #5daa9b;
+  border-radius: 5px;
+  padding: 40px 55px;
+}
+.detailsFormWrap .formInner {
+  max-width: 540px;
+}
+.detailsFormWrap .mb40 {
+  margin-bottom: 40px;
+}
+.detailsFormWrap .form-label,
+.detailsFormWrap label {
+  font-family: "gilroy-bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 4px;
+  color: #a00014;
+}
+.detailsFormWrap input.form-control,
+.detailsFormWrap select.form-select {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #a00014;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  padding: 16px;
+  margin: 0;
+  background-color: transparent;
+  color: #a00014;
+  height: 53px;
+}
+.detailsFormWrap input.form-control::-ms-input-placeholder, .detailsFormWrap input.form-control::placeholder,
+.detailsFormWrap select.form-select::-ms-input-placeholder,
+.detailsFormWrap select.form-select::placeholder {
+  color: rgba(93, 170, 155, 0.4);
+}
+.detailsFormWrap select:focus,
+.detailsFormWrap input:focus {
+  outline-offset: 0;
+  outline: none;
+}
+.detailsFormWrap .form-control:focus,
+.detailsFormWrap .form-select:focus {
+  border: none;
+  border-bottom: 1px solid #a00014;
+  box-shadow: none;
+}
+.detailsFormWrap .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 142px;
+  margin-top: 23px;
+}
+.detailsFormWrap .btn,
+.detailsFormWrap button.btn:not(:hover):not(:active):not(.has-background) {
+  border: 2px solid gray;
+  color: rgba(93, 170, 155, 0.4);
+  background-color: transparent;
+  width: 142px;
+  height: 65px;
+  border-radius: 5px;
+  border: 1px solid #a00014;
+  font-family: "gilroy-bold";
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.detailsFormWrap .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.detailsFormWrap .form-check {
+  height: 20px;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+}
+.detailsFormWrap input[type=checkbox] + label,
+.detailsFormWrap input[type=radio] + label {
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.detailsFormWrap input[type=checkbox],
+.detailsFormWrap input[type=radio] {
+  width: 20px;
+  height: 20px;
+  min-height: unset;
+  border: 1px solid #a00014;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.detailsFormWrap input[type=checkbox]:after {
+  display: none;
+}
+.detailsFormWrap input[type=checkbox]:checked {
+  background-color: #a00014;
+}
+.detailsFormWrap .checkbox label {
+  display: flex;
+  align-items: center;
+}
+.detailsFormWrap .checkbox input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.detailsFormWrap .wpcf7-list-item {
+  margin-bottom: 23px;
+  margin-left: 0;
+}
+.detailsFormWrap .wpcf7-list-item.last {
+  margin-bottom: 0;
+}/*# sourceMappingURL=fill-details.css.map */
