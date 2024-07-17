@@ -1,0 +1,156 @@
+<div class="mb40">
+  <label for="full-name" class="form-label">Full Name:*</label>
+  [text* full-name id:full-name class:form-control placeholder "Max 60
+  characters..."]
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="date-of-birth" class="form-label">Date of Birth:</label>
+      [date date-of-birth id:date-of-birth class:form-control placeholder
+      "26-11-1996"]
+    </div>
+  </div>
+</div>
+
+<div class="mb40">
+  <label for="current-address" class="form-label">Current Address:</label>
+  [text current-address id:current-address class:form-control]
+</div>
+
+<div class="mb40">
+  <label for="city" class="form-label">City:</label>
+  [text city id:city class:form-control]
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="gender" class="form-label">Gender:</label>
+      [select gender id:gender class:form-select " " "Man" "Woman" "Choose not
+      to identify"]
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="interested-in" class="form-label">Interested In:</label>
+      [select interested-in id:interested-in class:form-select " " "Man"
+      "Woman"]
+    </div>
+  </div>
+</div>
+
+<div class="mb40">
+  <label for="profession" class="form-label">Profession:</label>
+  [text profession id:profession class:form-control]
+</div>
+
+<div class="mb40">
+  <label for="highest-education" class="form-label">Highest Education:</label>
+  [text highest-education id:highest-education class:form-control]
+</div>
+
+<div class="mb40">
+  <label for="linkedin-profile-link" class="form-label"
+    >LinkedIn Profile Link:</label
+  >
+  [url linkedin-profile-link id:linkedin-profile-link class:form-control]
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="annual-income" class="form-label">Annual Income:</label>
+      [select annual-income id:annual-income class:form-select " " "Less than 20
+      lacs" "20 to 35 lacs" "36 to 50 lacs" "51 to 70 lacs" "70 lacs to 1 Cr"
+      "More than 1 Cr"]
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="height" class="form-label">Height:</label>
+      [select height id:height class:form-select " " "4'10" "4'11" "5'0" "5'1"
+      "5'2" "5'3" "5'4" "5'5" "5'6" "5'7" "5'8" "5'9" "5'10" "5'11" "6'0" "6'1"
+      "6'2" "6'3" "6'4" "6'5"]
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="marital-status" class="form-label">Marital Status:</label>
+      [select marital-status id:marital-status class:form-select " " "Never
+      Married" "Separated" "Divorced" "Widowed"]
+    </div>
+  </div>
+</div>
+
+<div class="mb40">
+  <label for="email-address" class="form-label">Email Address:</label>
+  [email email-address id:email-address class:form-control]
+</div>
+
+<div class="mb40">
+  <label for="mobile-number" class="form-label">Mobile Number:</label>
+  [tel mobile-number id:mobile-number class:form-control placeholder
+  "+91-1234567890"]
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="photograph" class="form-label">Photograph:</label>
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload a file</button>
+        [file photograph id:photograph]
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="mb40">
+      <label for="proof-of-identity" class="form-label"
+        >Proof of Identity:</label
+      >
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload a file</button>
+        [file proof-of-identity id:proof-of-identity]
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb40">
+  <div class="form-check">
+    [checkbox relationship-status id:relationship-status class:form-check-input]
+    <label class="form-check-label" for="relationship-status">
+      I confirm I am single by relationship status
+    </label>
+  </div>
+</div>
+
+<div class="mb40">
+  <div class="form-check">
+    [checkbox true-details id:true-details class:form-check-input]
+    <label class="form-check-label" for="true-details">
+      I certify all the above details about me to be true
+    </label>
+  </div>
+</div>
+
+<div class="mb40">
+  <div class="form-check">
+    [checkbox policy-and-terms id:policy-and-terms class:form-check-input]
+    <label class="form-check-label" for="policy-and-terms">
+      I agree to the Privacy Policy and Terms & Conditions of my membership
+    </label>
+  </div>
+</div>
+<div class="mb40">
+  [checkbox checkbox-732 use_label_element class:checkbox "I confirm I am single
+  by relationship status" "I certify all the above details about me to be true"
+  "I agree to the Privacy Policy and Terms & Conditions of my membership"]
+</div>
+
+[submit "Submit"]
