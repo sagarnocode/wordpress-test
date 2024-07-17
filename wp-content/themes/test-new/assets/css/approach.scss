@@ -1,0 +1,214 @@
+.approachBanner {
+    position: relative;
+    border-top: 1px solid #a00014;
+    border-bottom: 1px solid #a00014;
+    margin-bottom: 108px;
+    color: #a00014;
+    &::before {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #a00014;
+        content: "";
+    }
+    .approachDetail {
+        color: #f3e5ba;
+        padding-bottom: 226px;
+        p {
+            font-family: "gilroy-regular";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.13px;
+            text-align: left;
+        }
+    }
+    .approachIcon {
+        width: 74px;
+        height: 118px;
+        margin-bottom: 11px;
+    }
+    h1 {
+        font-family: "agatho-regular";
+        font-size: 70px;
+        line-height: 74px;
+
+        margin-bottom: 28px;
+    }
+    .approachSlider {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 190px;
+        max-width: 521px;
+        margin-left: 65px;
+        .sliderBox {
+            color: #a00014;
+            border: 1px solid #5daa9b;
+            max-width: 521px;
+            min-height: 276px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            //margin: 0 30px;
+        }
+        .slick-dots {
+            bottom: -30px;
+            text-align: right;
+            button {
+                background: #5daa9b;
+                opacity: 0.4;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                &::before {
+                    content: none;
+                }
+            }
+            .slick-active button {
+                background: #5DAA9B;
+                opacity: 1;
+
+            }
+        }
+        .boxTitle {
+            border-bottom: 1px solid #5daa9b;
+            font-family: "agatho-regular";
+            font-size: 45px;
+            line-height: 47.61px;
+            display: flex;
+            align-items: center;
+        }
+        .counter {
+            padding: 20px 21px;
+            min-width: 96px;
+            text-align: center;
+            position: relative;
+            &::after {
+                position: absolute;
+                border-right: 1px solid #5daa9b;
+                content: "";
+            }
+        }
+        h3 {
+            border-left: 1px solid #5daa9b;
+            padding: 27px;
+            margin-bottom: 0;
+        }
+        .boxDetails {
+            height: calc(100% - 88px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #5daa9b;
+            margin-left: 96px;
+            p {
+                font-family: "romelu_vomelu_italic";
+                font-size: 30px;
+                line-height: 36.88px;
+                padding: 30px;
+            }
+        }
+    }
+}
+.freedomeWrap {
+    margin-bottom: 153px;
+}
+
+.freedomeDetails {
+    color: #a00014;
+    max-width: 446px;
+    h2 {
+        font-family: "agatho-regular";
+        font-size: 60px;
+        line-height: 63px;
+        margin-bottom: 58px;
+    }
+    h3 {
+        font-family: "romelu_vomelu_italic";
+        font-size: 45px;
+        line-height: 49px;
+        margin-bottom: 33px;
+    }
+    p {
+        p {
+            font-family: "gilroy-regular";
+            font-size: 18px;
+            line-height: 22.13px;
+        }
+    }
+}
+
+.guideWrap {
+    margin-bottom: 112px;
+    .borderTitle {
+        margin-bottom: 136px;
+    }
+}
+
+.guidPrincipal {
+    color: #a00014;
+    text-align: center;
+    .boxWrapper {
+        max-width: 1028px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h2 {
+        text-align: center;
+        font-family: "agatho-regular";
+        font-size: 60px;
+        line-height: 63px;
+        margin-bottom: 84px;
+    }
+    .principalImg {
+        height: 83px;
+        width: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+    h4 {
+        font-family: "agatho-bold";
+        font-size: 28px;
+        line-height: 29.62px;
+        margin-bottom: 7px;
+    }
+    p {
+        max-width: 202px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+
+        font-family: "DM Sans", sans-serif;
+    }
+}
+
+.joinToday {
+    h3 {
+        font-family: "romelu_vomelu_italic";
+        font-size: 45px;
+        line-height: 49px;
+        color: #a00014;
+        max-width: 643px;
+    }
+}
+.red-btn:focus {
+    background-color: #a00014 !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+.btnBox {
+    display: flex;
+    justify-content: end;
+}
+.joinBtnWrap {
+    width: 314px;
+    a {
+        display: block;
+    }
+}

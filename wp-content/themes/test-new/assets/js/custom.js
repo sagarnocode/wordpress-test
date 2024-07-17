@@ -22,6 +22,15 @@ $(document).ready(function () {
       },
     ],
   });
+  $('.approachSlider').slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 1500,
+    centerMode: false,
+    dots: true,
+  });
 });
 document.addEventListener("DOMContentLoaded", function () {
   var toggler = document.querySelector(".navbar-toggler");
@@ -31,3 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
     navbar.classList.toggle("navbarOpen");
   });
 });
+
