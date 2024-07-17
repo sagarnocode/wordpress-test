@@ -25,7 +25,7 @@ $(document).ready(function () {
   $('.approachSlider').slick({
     infinite: true,
     arrows: false,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     speed: 1500,
     centerMode: false,
