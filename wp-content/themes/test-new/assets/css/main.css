@@ -126,12 +126,15 @@ header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs a {
   line-height: 22px;
   font-family: "gilroy-semibold";
 }
-header .primary-navigation > div > ul.menu-wrapper > li.menu-item.current-menu-item a {
+header .primary-navigation > div > ul.menu-wrapper > li.menu-item.current-menu-item a, header .primary-navigation > div > ul.menu-wrapper > li.menu-item.current-menu-ancestor a {
   text-decoration: none;
   font-family: "gilroy-semibold";
 }
 header .primary-navigation > div > ul.menu-wrapper > li.menu-item:first-child {
   margin-left: 0;
+}
+header .primary-navigation > div > ul.menu-wrapper .sub-menu, header .primary-navigation > div > ul.menu-wrapper .sub-menu-toggle {
+  display: none;
 }
 header .primary-navigation .primary-menu-container {
   margin: 0;

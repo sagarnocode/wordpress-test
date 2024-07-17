@@ -5,6 +5,28 @@
  */
 get_header();
 ?>
+<?php if (have_rows('title_section')): ?>
+    <?php while (have_rows('title_section')):
+        the_row(); ?>
+        <section class="formTitleWrap">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="d-flex headingWrap">
+                        <div class="notepadIcon">
+                            <?php $left_icon = get_sub_field('left_icon'); ?>
+                            <?php if ($left_icon) { ?>
+                                <img src="<?php echo $left_icon['url']; ?>" alt="<?php echo $left_icon['alt']; ?>" />
+                            <?php } ?>
+                        </div>
+                        <h2><?php the_sub_field('page_title'); ?></h2>
+
+                    </div>
+                    <p><?php the_sub_field('form_details_text'); ?></p>
+                </div>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10">

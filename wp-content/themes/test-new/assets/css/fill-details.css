@@ -121,4 +121,69 @@
 }
 .detailsFormWrap .wpcf7-list-item.last {
   margin-bottom: 0;
+}
+
+.formTitleWrap {
+  padding-top: 102px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #a00014;
+}
+.formTitleWrap .headingWrap {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.formTitleWrap .notepadIcon {
+  max-width: 87px;
+  max-height: 96px;
+}
+.formTitleWrap h2 {
+  font-family: "agatho-regular";
+  font-size: 50px;
+  line-height: 52.9px;
+  text-align: center;
+  max-width: 290px;
+  position: relative;
+}
+.formTitleWrap h2::after {
+  content: "";
+  background: url("../images/Isolation_Mode (1).png") no-repeat;
+  background-size: contain;
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  right: -29px;
+  bottom: 15px;
+}
+.formTitleWrap p {
+  font-family: "gilroy-regular";
+  font-size: 18px;
+  line-height: 21.83px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .formTitleWrap {
+    padding-top: 55px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  .formTitleWrap .notepadIcon {
+    margin-right: -17px;
+    margin-top: 14px;
+  }
+  .formTitleWrap h2 {
+    font-size: 45px;
+  }
+  .formTitleWrap h2::after {
+    right: 0;
+  }
+  .detailsFormWrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .detailsFormWrap input[type=checkbox], .detailsFormWrap input[type=radio] {
+    min-width: 20px;
+    min-height: 20px;
+  }
 }/*# sourceMappingURL=fill-details.css.map */

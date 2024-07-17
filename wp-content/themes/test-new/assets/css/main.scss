@@ -168,7 +168,7 @@ header {
           font-family: "gilroy-semibold";
         }
       }
-      &.current-menu-item {
+      &.current-menu-item, &.current-menu-ancestor {
         a {
           // font-weight: 600 ;
           text-decoration: none;
@@ -178,6 +178,9 @@ header {
     }
     > li.menu-item:first-child {
       margin-left: 0;
+    }
+    .sub-menu, .sub-menu-toggle {
+      display: none;
     }
   }
   .primary-navigation .primary-menu-container {
