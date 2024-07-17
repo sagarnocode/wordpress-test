@@ -5,6 +5,7 @@
  */
 get_header();
 ?>
+
 <?php if ( have_rows( 'faq_section' ) ) : ?>
 <?php while ( have_rows( 'faq_section' ) ) : the_row(); ?>
 <section class="faqWrap">
@@ -59,4 +60,5 @@ get_header();
 </section>
 <?php endwhile; ?>
 <?php endif; ?>
+
 <?php get_footer(); ?>

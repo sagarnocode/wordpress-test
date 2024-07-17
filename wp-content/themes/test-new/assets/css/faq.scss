@@ -2,7 +2,7 @@
   padding-top: 101px;
   .accordion {
     margin-right: -73px;
-    margin-left: 32px;  
+    margin-left: 32px;
   }
 }
 
@@ -32,8 +32,8 @@
   background-color: transparent !important;
   border: none !important;
   color: #a00014 !important;
-  text-align: left;  
-  
+  text-align: left;
+
   text-align: left;
   font-family: "gilroy-bold";
   padding: 0;
@@ -42,12 +42,11 @@
 
   &:not(.collapsed)::after {
     background-image: url("../images/minus.png");
-    
   }
-  
+
   &::after {
-    content: "";    
-    right: 11px;  
+    content: "";
+    right: 11px;
     height: 32px;
     top: -1px;
     width: 32px;
@@ -56,8 +55,6 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
-  
 }
 .accordion-item {
   color: #a00014 !important;
@@ -65,7 +62,7 @@
   margin-bottom: 16px;
   padding: 8px 11px 8px 23px;
   border-radius: 5px;
-  h2 {    
+  h2 {
     margin-bottom: 0;
     font-size: 18px;
     line-height: 27px;
@@ -94,16 +91,14 @@
   }
 }
 @media only screen and (max-width: 1299px) {
-
   .faqWrap {
     .accordion {
       margin-right: 0px;
       margin-left: 0px;
-    
     }
   }
 }
-@media only screen and (max-width: 1199px) { 
+@media only screen and (max-width: 1199px) {
   .faqWrap {
     .accordion-body {
       max-width: 600px;
@@ -111,7 +106,6 @@
     .accordion {
       margin-right: 0px;
       margin-left: 0px;
-    
     }
   }
 }
@@ -121,10 +115,10 @@
     max-width: unset;
     margin-top: 0;
     margin-bottom: 40px;
-}
-.accordion-item  h2 {
-  font-size: 14px;
+  }
+  .accordion-item h2 {
+    font-size: 14px;
     line-height: 20px;
     min-height: 44px;
+  }
 }
- }

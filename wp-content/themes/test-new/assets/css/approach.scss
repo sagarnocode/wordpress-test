@@ -1,0 +1,413 @@
+.approachBanner {
+    position: relative;
+    border-top: 1px solid #a00014;
+    border-bottom: 1px solid #a00014;
+    margin-bottom: 108px;
+    color: #a00014;
+    margin-top: 29px;
+    padding-top: 0;
+    &::before {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #a00014;
+        content: "";
+    }
+    .approachDetail {
+        color: #f3e5ba;
+        padding-bottom: 209px;
+        padding-top: 118px;
+        padding-left: 20px;
+        p {
+            font-family: "gilroy-regular";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.13px;
+            text-align: left;
+        }
+    }
+    .approachIcon {
+        width: 74px;
+        height: 118px;
+        margin-bottom: 26px;
+    }
+    h1 {
+        font-family: "agatho-regular";
+        font-size: 70px;
+        line-height: 74px;
+        margin-bottom: 13px;
+    }
+    .approachSlider {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 190px;
+        margin-top: 160px;
+        max-width: 521px;
+        margin-left: 89px;
+        .sliderBox {
+            color: #a00014;
+            border: 1px solid #5daa9b;
+            max-width: 521px;
+            min-height: 276px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 12px;
+            //margin: 0 30px;
+        }
+        .slick-dots {
+            bottom: -30px;
+            text-align: right;
+            margin-right: -12px;
+            button {
+                background: #5daa9b;
+                opacity: 0.4;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                &::before {
+                    content: none;
+                }
+            }
+            .slick-active button {
+                background: #5daa9b;
+                opacity: 1;
+            }
+        }
+        .boxTitle {
+            border-bottom: 1px solid #5daa9b;
+            font-family: "agatho-regular";
+            font-size: 45px;
+            line-height: 47.61px;
+            display: flex;
+            align-items: center;
+        }
+        .counter {
+            padding: 35px 20px 68px;
+            min-width: 96px;
+            text-align: center;
+            position: relative;
+            height: 96px;
+            &::after {
+                position: absolute;
+                border-right: 1px solid #5daa9b;
+                content: "";
+            }
+        }
+        h3 {
+            border-left: 1px solid #5daa9b;
+            padding: 36px 30px 19px 33px;
+            margin-bottom: 0;
+            font-family: "agatho-regular";
+            font-size: 45px;
+            font-weight: 300;
+            line-height: 47.61px;
+        }
+        .boxDetails {
+            height: calc(100% - 88px);
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            border-left: 1px solid #5daa9b;
+            margin-left: 96px;
+            p {
+                font-family: "romelu_vomelu_italic";
+                font-size: 30px;
+                line-height: 36.88px;
+                padding: 33px 35px 10px;
+                max-width: 373px;
+            }
+        }
+    }
+}
+.freedomeWrap {
+    margin-bottom: 98px;
+    .layerImageBox {
+        justify-content: start;
+        margin-left: 47px;
+        .layerImgBg {
+            width: 96%;
+            height: 96%;
+            bottom: -11px;
+            right: -11px;
+        }
+    }
+}
+
+.freedomeDetails {
+    color: #a00014;
+    padding-top: 27px;
+    max-width: 465px;
+    padding-left: 26px;
+    h2 {
+        font-family: "agatho-regular";
+        font-size: 60px;
+        line-height: 63px;
+        margin-bottom: 49px;
+    }
+    h3 {
+        font-family: "romelu_vomelu_italic";
+        font-size: 45px;
+        line-height: 49px;
+        margin-bottom: 33px;
+        &:last-of-type {
+            margin-bottom: 41px;
+            margin-top: 39px;
+        }
+    }
+    p {
+        font-family: "gilroy-regular";
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.guideWrap {
+    margin-bottom: 96px;
+    .borderTitle {
+        margin-bottom: 150px;
+    }
+}
+
+.guidPrincipal {
+    color: #a00014;
+    text-align: center;
+    max-width: 1028px;
+    margin: 0 auto;
+    .boxWrapper {
+        //align-items: center;
+        justify-content: space-between;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        text-align: center;
+        font-family: "agatho-regular";
+        font-size: 60px;
+        line-height: 63px;
+        margin-bottom: 75px;
+    }
+    .principalImg {
+        height: 83px;
+        width: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 27px;
+    }
+    h4 {
+        font-family: "agatho-bold";
+        font-size: 28px;
+        line-height: 29.62px;
+        margin-bottom: 7px;
+    }
+    p {
+        max-width: 202px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+
+        font-family: "DM Sans", sans-serif;
+    }
+}
+
+.joinToday {
+    padding-bottom: 30px;
+    .row {
+        align-items: center;
+    }
+    h3 {
+        font-family: "romelu_vomelu_italic";
+        font-size: 45px;
+        line-height: 49px;
+        color: #a00014;
+        max-width: 643px;
+        margin-bottom: 0;
+    }
+}
+.red-btn:focus {
+    background-color: #a00014 !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+// .btnBox {
+//     display: flex;
+//     justify-content: end;
+// }
+.joinBtnWrap {
+    width: 314px;
+    margin-left: 81px;
+    a {
+        display: flex;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .approachBanner .approachSlider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .approachBanner {
+        margin-bottom: 65px;
+        &::before {
+            height: 50%;
+            width: 100%;
+            padding-bottom: 0;
+        }
+        .approachDetail {
+            margin-bottom: 100px;
+            padding-bottom: 0;
+            padding-top: 58px;
+        }
+        .approachSlider {
+            margin-top: 0;
+            margin-bottom: 58px;
+        }
+    }
+
+    .freedomeWrap .layerImageBox {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .freedomeDetails {
+        max-width: unset;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .guideWrap {
+        .borderTitle {
+            margin-bottom: 85px;
+        }
+    }
+    .guidPrincipal {
+        .boxWrapper {
+            flex-wrap: wrap;
+        }
+        .principal {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+    .joinToday {
+        h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: unset;
+            font-size: 42px;
+            line-height: 52px;
+        }
+        .joinBtnWrap {
+            margin: 0;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            a {
+                padding-left: 40px;
+                padding-right: 40px;
+                min-width: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .approachBanner {
+        margin-bottom: 45px;
+        .approachIcon {
+            width: 55px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 57px;
+            line-height: 56px;
+            margin-bottom: 13px;
+        }
+        .approachSlider {
+            .counter {
+                min-width: 78px;
+            }
+            .boxDetails {
+                margin-left: 78px;
+            }
+            .sliderBox {
+                min-height: unset;
+            }
+            .boxTitle {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 30px;
+                padding: 33px 15px 22px 15px;
+            }
+            .boxDetails p {
+                font-size: 25px;
+                line-height: 31.88px;
+                padding: 33px 15px 10px;
+            }
+        }
+    }
+    .freedomeDetails {
+        text-align: center;
+        h2 {
+            font-size: 45px;
+            line-height: 45px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 25px;
+            &:last-of-type {
+                margin-bottom: 25px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .guidPrincipal {
+        h2 {
+            font-size: 45px;
+            line-height: 50px;
+            margin-bottom: 35px;
+        }
+    }
+    .guidPrincipal .principal {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .joinToday {
+        padding-bottom: 0;
+        h3 {
+            font-size: 29px;
+            line-height: 40px;
+        }
+    }
+    .guideWrap {
+        margin-bottom: 40px;
+        .borderTitle {
+            margin-bottom: 45px;
+        }
+    }
+    .freedomeWrap {
+        margin-bottom: 75px;
+    }
+}
