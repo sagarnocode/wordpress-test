@@ -31,6 +31,9 @@ $(document).ready(function () {
     centerMode: false,
     dots: true,
   });
+  $(".contentDetails").mCustomScrollbar({
+    theme:"dark",
+  });
 });
 document.addEventListener("DOMContentLoaded", function () {
   var toggler = document.querySelector(".navbar-toggler");

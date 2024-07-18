@@ -1,0 +1,98 @@
+.privacyPolicy {
+    padding-top: 72px;
+}
+
+.verticalMenu {
+    .logoWrap {
+        max-width: 118px;
+        max-height: 118px;
+        margin-bottom: 15px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            font-family: "agatho-regular";
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 57.6px;
+            margin-bottom: 5px;
+            text-align: left;
+            a {
+                color: #a00014;
+                opacity: 0.3;
+                &.activeMenu, &:hover {
+                    opacity: 1;
+                }
+                &:focus, &:active {
+                    border: none;
+                    text-decoration: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.contentDetails {
+    border: 1px solid rgba(93, 170, 155, 0.8);
+    padding: 22px 2px 35px 49px;
+    border-radius: 5px;
+    overflow: auto;
+    margin-left: 0px;
+    height: 590px;
+    margin-right: -44px;
+    p {
+        font-family: "gilroy-regular";
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+        color: #a00014;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        line-height: 30px;
+        background: #A00014;
+        opacity: 60%;
+        width: 8px;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail{
+        width: 0;
+    }
+    .mCSB_inside>.mCSB_container {
+        margin-right: 55px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .contentDetails {
+        margin: 0;
+    }
+    .verticalMenu ul li {
+        font-size: 36px;
+        line-height: 45.6px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .privacyPolicy {
+        padding-top: 30px;
+    }
+    .verticalMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        ul li {
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .contentDetails {
+        padding: 22px 2px 35px 25px;
+        .mCSB_inside > .mCSB_container {
+            margin-right: 32px;
+        }
+    }
+}
