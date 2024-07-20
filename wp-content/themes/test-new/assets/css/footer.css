@@ -81,11 +81,18 @@
   padding: 0;
   color: #a00014;
 }
+.footer-navigation-wrapper li a:hover {
+  text-decoration: none;
+}
 .footer-navigation-wrapper li.instaLink a {
   display: flex;
   font-family: "DM Sans", sans-serif;
   font-style: italic;
   font-weight: 500;
+  text-decoration: none;
+}
+.footer-navigation-wrapper li.instaLink a svg {
+  display: none;
 }
 .footer-navigation-wrapper li.instaLink a::before {
   content: "";
@@ -93,6 +100,15 @@
   width: 23px;
   background: url("../images/insta-icon.svg") no-repeat;
   margin-right: 16px;
+}
+.footer-navigation-wrapper li.instaLink a span.screen-reader-text {
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  overflow: auto;
+  position: relative !important;
 }
 
 .footer-navigation-wrapper li a:link,

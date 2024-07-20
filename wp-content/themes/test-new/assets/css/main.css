@@ -111,11 +111,6 @@ header .primary-navigation > div > ul.menu-wrapper > li.menu-item > a {
   line-height: 24px;
   text-transform: capitalize;
 }
-header .primary-navigation > div > ul.menu-wrapper > li.menu-item > a:hover, header .primary-navigation > div > ul.menu-wrapper > li.menu-item > a:active, header .primary-navigation > div > ul.menu-wrapper > li.menu-item > a:focus {
-  text-decoration: none;
-  outline: none;
-  background: transparent;
-}
 header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs {
   margin-left: 47px;
   margin-right: 0;
@@ -126,9 +121,17 @@ header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs a {
   line-height: 22px;
   font-family: "gilroy-semibold";
 }
+header .primary-navigation > div > ul.menu-wrapper > li.menu-item.contactUs a:hover {
+  text-decoration: none;
+}
 header .primary-navigation > div > ul.menu-wrapper > li.menu-item.current-menu-item a, header .primary-navigation > div > ul.menu-wrapper > li.menu-item.current-menu-ancestor a {
   text-decoration: none;
   font-family: "gilroy-semibold";
+}
+header .primary-navigation > div > ul.menu-wrapper li:not(.contactUs) a:hover, header .primary-navigation > div > ul.menu-wrapper li:not(.contactUs) a:active, header .primary-navigation > div > ul.menu-wrapper li:not(.contactUs) a:focus {
+  text-decoration: none;
+  outline: none;
+  background: transparent;
 }
 header .primary-navigation > div > ul.menu-wrapper > li.menu-item:first-child {
   margin-left: 0;

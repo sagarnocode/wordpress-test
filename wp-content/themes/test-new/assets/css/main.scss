@@ -146,14 +146,7 @@ header {
         // color: #f1e5bf;
         text-transform: capitalize;
 
-        &:hover,
-        &:active,
-        &:focus {
-          // color: #f1e5bf;
-          text-decoration: none;
-          outline: none;
-          background: transparent;
-        }
+        
       }
 
       &.contactUs {
@@ -166,6 +159,9 @@ header {
           border-radius: 5px;
           line-height: 22px;
           font-family: "gilroy-semibold";
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
       &.current-menu-item, &.current-menu-ancestor {
@@ -174,6 +170,17 @@ header {
           text-decoration: none;
           font-family: "gilroy-semibold";
         }
+      }
+    }
+    li:not(.contactUs) a {
+      &:hover,
+        &:active,
+        &:focus {
+          // color: #f1e5bf;
+          text-decoration: none;
+          outline: none;
+          background: transparent;
+         
       }
     }
     > li.menu-item:first-child {

@@ -5,6 +5,7 @@
  */
 get_header();
 ?>
+
 <?php if (have_rows('our_story')): ?>
     <?php while (have_rows('our_story')):
         the_row(); ?>
@@ -48,7 +49,7 @@ get_header();
 <?php if (have_rows('lets_talk_section')): ?>
     <?php while (have_rows('lets_talk_section')):
         the_row(); ?>
-        <section class="letsTalk">
+        <section class="letsTalk" id="contact-us">
             <p class="borderTitle">
                 <?php the_sub_field('main_title'); ?>
             </p>

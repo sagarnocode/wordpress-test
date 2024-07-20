@@ -1,5 +1,5 @@
 <?php $_asset_path = get_stylesheet_directory_uri(); ?>
-<div?php
+<?php
 /**
  * Template Name: Fill in Details Page
  */
@@ -34,7 +34,6 @@ get_header();
             <div class="detailsFormWrap">
                 <div class="formInner">
                     <?php echo do_shortcode('[contact-form-7 id="27bf59d" title="The Couplet Approach"]'); ?>
-                    
 
                     <!-- <div class="mb40">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>

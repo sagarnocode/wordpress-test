@@ -74,18 +74,34 @@
     letter-spacing: 0.005em;
     padding: 0;
     color: #a00014;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &.instaLink a {
     display: flex;
     font-family: "DM Sans", sans-serif;
     font-style: italic;
     font-weight: 500;
+    text-decoration: none;
+    svg {
+      display: none;
+    }
     &::before {
       content: "";
       height: 23px;
       width: 23px;
       background: url("../images/insta-icon.svg") no-repeat;
       margin-right: 16px;
+    }
+    span.screen-reader-text {
+      -webkit-clip-path: none;
+      clip-path: none;
+      height: auto;
+      width: auto;
+      display: inline-block;
+      overflow: auto;
+      position: relative !important;
     }
   }
 }
