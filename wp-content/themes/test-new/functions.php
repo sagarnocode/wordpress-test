@@ -685,7 +685,12 @@ function add_specific_body_class($classes)
 	if (is_page('home')) { // Replace 'contact-us' with your specific page slug
 		$classes[] = 'topBanner';
 	}
-
+	
+	if (is_page('membership')) { // Replace 'contact-us' with your specific page slug
+		$classes[] = 'topBanner';
+	}
+	
+	
 	return $classes;
 }
 add_filter('body_class', 'add_specific_body_class');

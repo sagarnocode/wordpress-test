@@ -30,9 +30,42 @@ $(document).ready(function () {
     speed: 1500,
     centerMode: false,
     dots: true,
+
   });
+
+  // $('.gridWrap').slick({
+  //   infinite: false,
+  //   arrows: false,
+  //   autoplay: false,
+  //   autoplaySpeed: 1500,
+  //   speed: 1500,
+  //   centerMode: false,
+  //   dots: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 5000,
+  //       settings: "unslick",
+  //     },
+  //     {
+  //       breakpoint: 1200,
+  //       settings: {
+          
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 780,
+  //       settings: {
+          
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ]
+  // });
   $(".contentDetails").mCustomScrollbar({
-    theme:"dark",
+    theme: "dark",
   });
 });
 document.addEventListener("DOMContentLoaded", function () {

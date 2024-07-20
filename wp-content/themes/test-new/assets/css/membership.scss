@@ -1,0 +1,513 @@
+.memberShipWrap {
+    .bannerWrap {
+        background: #a00014;
+        padding-bottom: 110px;
+        margin-bottom: 131px;
+        padding-top: 270px;
+    }
+    .gridWrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    .bannerTitle {
+        color: #f3e5ba;
+        text-align: center;
+        margin-bottom: 120px;
+        h1 {
+            font-family: "agatho-regular";
+            font-size: 70px;
+            line-height: 74.06px;
+            margin-bottom: -13px;
+        }
+        p {
+            font-family: "gilroy-regular";
+            font-size: 24px;
+            line-height: 29.11px;
+        }
+    }
+    .bannerDetails {
+        font-family: "gilroy-regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.83px;
+        text-align: center;
+        margin: 75px auto 0;
+        max-width: 895px;
+        color: #f3e5ba;
+    }
+}
+// .selectBox {
+//     .optionBox {
+//         //margin-right: 10px;
+//     }
+//     &:last-of-type {
+//         .optionBox {
+//             margin-right: 0;
+//         }
+//     }
+// }
+.optionBox {
+    background: #fffcf6;
+    max-width: 389px;
+    min-height: 357px;
+    border-radius: 5px;
+    color: #a00014;
+    padding: 48px 38px 26px 38px;
+    .optionTop {
+        display: flex;
+        padding-bottom: 38px;
+    }
+    h4 {
+        font-family: "agatho-regular";
+        font-size: 45px;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    h5 {
+        font-family: "agatho-regular";
+        font-size: 32px;
+        line-height: 36px;
+        text-align: left;
+        margin-bottom: 0;
+        max-width: 185px;
+    }
+    h6 {
+        font-family: "agatho-regular";
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .topRight {
+        padding-left: 36px;
+        padding-right: 18px;
+        border-left: 1px solid;
+        padding-top: 20px;
+        span {
+            font-family: "agatho-regular";
+            font-size: 18px;
+            line-height: 21.92px;
+        }
+    }
+    .topLeft {
+        padding-right: 10px;
+    }
+    .optionBottom {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin-bottom: 24px;
+        }
+        span {
+            font-family: "gilroy-regular";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.83px;
+            text-align: center;
+            padding: 0 50px;
+        }
+        .red-sec {
+            &:hover,
+            &:focus {
+                background-color: #a00014;
+                color: #f3e5ba;
+            }
+        }
+    }
+}
+
+.giftTitle {
+    text-align: center;
+    color: #a00014;
+    margin-bottom: -35px;
+    position: relative;
+    &::before {
+        content: "";
+        background: url("../images/gift-icon.png");
+        width: 129px;
+        height: 108px;
+        position: absolute;
+        left: -5px;
+        bottom: -56px;
+    }
+    h2 {
+        font-family: "agatho-regular";
+        font-size: 50px;
+        line-height: 52.9px;
+        margin-bottom: 16px;
+        position: relative;
+        display: inline-flex;
+        &::after,
+        &::before {
+            content: "";
+            height: 59px;
+            width: 54px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -10px;
+        }
+
+        &::before {
+            background-image: url("../images/Isolation_Mode-1.png");
+            left: -69px;
+        }
+        &::after {
+            background-image: url("../images/Isolation_Mode\ \(1\).png");
+            right: -68px;
+        }
+    }
+    p {
+        font-family: "gilroy-regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.83px;
+        margin-bottom: 0;
+    }
+}
+
+.giftMemberForm {
+    &.detailsFormWrap {
+        border: none;
+        padding: 0;
+        .mb40 {
+            margin-bottom: 38px;
+        }
+    }
+    .membershipForm {
+        display: flex;
+        flex-direction: column;
+        .formTitleWrap {
+            padding-bottom: 0;
+            display: flex;
+            margin-bottom: 0;
+        }
+    }
+    .leftForm,
+    .rightForm {
+        width: 50%;
+    }
+    .childFormWrap,
+    .formTitle {
+        border: 1px solid #5daa9b;
+        border-radius: 5px;
+    }
+
+    .formBottom {
+        display: flex;
+        .childFormWrap {
+            padding: 33px 22px 38px 40px;
+            width: 50%;
+        }
+        .emptyBox {
+            height: 80px;
+        }
+    }
+    .formTitle {
+        padding: 16px 35px 21px;
+        border-bottom: 0;
+        width: 50%;
+
+        h3 {
+            font-family: "agatho-regular";
+            font-size: 32px;
+            color: #a00014;
+            line-height: 33.86px;
+            margin: 0;
+            text-align: left;
+        }
+    }
+    .rightForm {
+        .childFormWrap,
+        .formTitle {
+            margin-left: -1px;
+        }
+    }
+    .selectPlan {
+        h4 {
+            font-family: "agatho-regular";
+            font-size: 32px;
+            line-height: 33.86px;
+            text-align: left;
+            color: #a00014;
+            margin-bottom: 16px;
+        }
+        ul {
+            display: flex;
+            padding: 0;
+            list-style: none;
+            margin-left: -20px;
+            li {
+                padding: 5px 35px;
+                border-right: 1px solid #a00014;
+                text-align: center;
+                &:last-child {
+                    border: none;
+                }
+                strong {
+                    font-family: "gilroy-bold";
+                    font-size: 16px;
+                    line-height: 19.81px;
+                    margin-bottom: 12px;
+                    color: #a00014;
+                    display: block;
+                }
+                p {
+                    font-family: "gilroy-regular";
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14.4px;
+                    text-align: center;
+                    padding-top: 10px;
+                    max-width: 128px;
+                    color: #a00014;
+                }
+            }
+            h5 {
+                color: #a00014;
+                font-family: "gilroy-regular";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.41px;
+                max-width: 121px;
+                margin-bottom: 18px;
+            }
+        }
+    }
+    .card-radio-btn .content_head {
+        font-size: 16px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .card-input-element + .card {
+        width: 86px;
+        height: 39px;
+        margin: 0;
+        justify-content: center;
+        color: var(--primary);
+        box-shadow: none;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        padding: 0;
+        text-align: center;
+        /* box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1); */
+        border: 1px solid #a00014;
+    }
+
+    .card-input-element + .card:hover {
+        cursor: pointer;
+    }
+
+    .card-input-element:checked + .card {
+        border: 2px solid #a00014;
+        background-color: #a00014;
+        color: #f3e5ba;
+        -webkit-transition: border 0.3s;
+        -o-transition: border 0.3s;
+        transition: border 0.3s;
+    }
+
+    .card-input-element:checked + .card::after {
+        content: "\f058";
+        color: rgba(113, 158, 201, 0.6);
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-animation-name: fadeInCheckbox;
+        animation-name: fadeInCheckbox;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @-webkit-keyframes fadeInCheckbox {
+        from {
+            opacity: 0;
+            -webkit-transform: rotateZ(-20deg);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: rotateZ(0deg);
+        }
+    }
+
+    @keyframes fadeInCheckbox {
+        from {
+            opacity: 0;
+            transform: rotateZ(-20deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotateZ(0deg);
+        }
+    }
+    .submit-wrap {
+        margin-top: 145px;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        input[type="submit"] {
+            height: 56px;
+            border-radius: 5px;
+            background: #5daa9b !important;
+            width: 138px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23.44px;
+            letter-spacing: 0.005em;
+            font-family: "DM Sans", sans-serif;
+            opacity: 1;
+            color: #fffcf6 !important;
+            border: #5daa9b !important;
+            &:hover {
+                color: #fffcf6;
+                border: #5daa9b !important;
+            }
+        }
+        .wpcf7-spinner {
+            position: absolute;
+            top: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .memberShipWrap .bannerTitle h1 {
+        font-size: 60px;
+        line-height: 64px;
+    }
+    .memberShipWrap .gridWrap {
+        display: flex;
+        gap: 15px;
+        .selectBox {
+            width: 33%;
+        }
+        .slick-dots {
+            bottom: -30px;
+            text-align: center;
+            margin-right: -12px;
+            button {
+                background: #5daa9b;
+                opacity: 0.4;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                &::before {
+                    content: none;
+                }
+            }
+            .slick-active button {
+                background: #5daa9b;
+                opacity: 1;
+            }
+        }
+    }
+    .optionBox {
+        padding: 20px;
+        min-height: unset;
+        h5 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        h6 {
+            font-size: 40px;
+            line-height: 42px;
+        }
+        .optionBottom span {
+            padding: 6px 20px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .giftWrap {
+        h2 {
+            font-size: 38px;
+            line-height: 42.9px;
+        }
+        p {
+            font-size: 14px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+    .giftMemberForm {
+        .formTitleWrap,
+        .formBottom {
+            flex-direction: column;
+            .childFormWrap,
+            .formTitle {
+                width: 100%;
+            }
+        }
+    }
+    .gridWrap {
+        flex-direction: column;
+        .selectBox {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .giftMemberForm {
+        .selectPlan ul {
+            flex-direction: column;
+            margin-left: 0px;
+            li {
+                padding: 10px;
+                border-right: none;
+                border-bottom: 1px solid #a00014;
+                text-align: center;
+                h5 {
+                    margin: 0 auto;
+                    max-width: 300px;
+                }
+            }
+        }
+
+        .formBottom .emptyBox {
+            height: 0;
+            display: none;
+        }
+        .submit-wrap {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .formBottom .childFormWrap {
+            padding: 15px;
+        }
+    }
+    .giftTitle::before {
+        width: 73px;
+        left: 50%;
+        background-size: contain;
+        bottom: 0;
+        background-repeat: no-repeat;
+        top: -75px;
+        margin-left: -40px;
+    }
+    .giftTitle h2::after,
+    .giftTitle h2::before {
+        width: 35px;
+    }
+    .giftTitle h2::before {
+        left: -32px;
+    }
+    .giftTitle h2::after {
+        right: -32px;
+    }
+}
