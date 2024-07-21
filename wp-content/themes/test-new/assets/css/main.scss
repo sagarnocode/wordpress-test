@@ -349,6 +349,8 @@ header {
     border: 2px solid #f3e5ba;
     padding: 15px;
     color: #f3e5ba;
+    background: transparent ! IMPORTANT;
+    text-decoration: none !important;
 
     &:hover {
       color: #f3e5ba;

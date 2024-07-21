@@ -71,18 +71,49 @@
     text-decoration: underline;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 50px;
+  }
+  .submit-btn-wrap {
+    input[type="submit"] {
+      height: 56px;
+      border-radius: 5px;
+      background: #5daa9b !important;
+      width: 138px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23.44px;
+      letter-spacing: 0.005em;
+      font-family: "DM Sans", sans-serif;
+      opacity: 1;
+      color: #fffcf6 !important;
+      border: #5daa9b !important;
+    }
   }
 
-  .upload-btn-wrapper input[type="file"] {
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+  .upload-btn-wrapper {
+    input[type="file"] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    .btn {
+      z-index: 1;
+      position: relative;
+    }
+    span {
+      z-index: 10;
+      display: inline-block;
+      width: 145px;
+      height: 63px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   .form-check {
     height: 20px;
@@ -185,7 +216,9 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .detailsFormWrap input[type=checkbox], .detailsFormWrap input[type=radio] {
+  .detailsFormWrap input[type="checkbox"],
+  .detailsFormWrap input[type="radio"] {
     min-width: 20px;
-    min-height: 20px;}
+    min-height: 20px;
+  }
 }

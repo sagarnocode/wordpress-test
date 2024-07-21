@@ -30,7 +30,7 @@ get_header();
                     <h3><?php the_sub_field('banner_sub_title'); ?></h3>
                     <div class="btn-wrap">
                         <a href="" class="primary-btn"><?php the_sub_field('start_btn'); ?></a>
-                        <a href="" class="sec-btn"><?php the_sub_field('contact_btn'); ?></a>
+                        <a href="./index.php/our-story/#contact-us" class="sec-btn"><?php the_sub_field('contact_btn'); ?></a>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@ get_header();
                     <h3><?php the_sub_field('meet_title'); ?></h3>
                     <div class="btn-wrap">
                         <a href="" class="red-btn"><?php the_sub_field('sign_up_btn'); ?></a>
-                        <a href="" class="red-sec"><?php the_sub_field('contact_us_btn'); ?></a>
+                        <a href="./index.php/our-story/#contact-us" class="red-sec"><?php the_sub_field('contact_us_btn'); ?></a>
                     </div>
                 </div>
             </div>

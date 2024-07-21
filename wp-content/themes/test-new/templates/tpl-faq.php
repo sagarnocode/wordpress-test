@@ -17,7 +17,7 @@ get_header();
                     <p><?php the_sub_field( 'faq_description' ); ?></p>
                     
                     <div class="faqContact">
-                    <a href="" class="red-sec">
+                    <a href="./index.php/our-story/#contact-us" class="red-sec">
                     <?php the_sub_field( 'faq_contact' ); ?> </a>
                     </div>
                    

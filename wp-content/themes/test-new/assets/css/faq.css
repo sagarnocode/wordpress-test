@@ -56,10 +56,13 @@
 
 .accordion-item {
   color: #a00014 !important;
-  border: 1px solid rgba(93, 170, 155, 0.8);
+  border: 1px solid rgba(93, 170, 155, 0.8) !important;
   margin-bottom: 16px;
   padding: 8px 11px 8px 23px;
   border-radius: 5px;
+}
+.accordion-item button {
+  box-shadow: none !important;
 }
 .accordion-item h2 {
   margin-bottom: 0;

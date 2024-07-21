@@ -58,10 +58,13 @@
 }
 .accordion-item {
   color: #a00014 !important;
-  border: 1px solid #5daa9bcc;
+  border: 1px solid #5daa9bcc !important;
   margin-bottom: 16px;
   padding: 8px 11px 8px 23px;
   border-radius: 5px;
+  button {
+    box-shadow: none !important;
+  }
   h2 {
     margin-bottom: 0;
     font-size: 18px;
