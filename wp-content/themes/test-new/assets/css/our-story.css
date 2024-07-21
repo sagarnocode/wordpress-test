@@ -95,6 +95,7 @@
   border: 1px solid #f3e5ba;
   max-width: 620px;
   padding: 40px;
+  position: relative;
 }
 .formWrap label {
   color: #f3e5ba;
@@ -163,6 +164,23 @@
   min-width: 160px;
   text-align: center;
   height: 56px;
+}
+
+.whatsappLink {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+}
+.whatsappLink span {
+  color: #f3e5ba;
+}
+.whatsappLink a {
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+.whatsappLink a:hover, .whatsappLink a:focus {
+  background-color: transparent !important;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -246,5 +264,13 @@
   }
   .formWrap input:not([type=submit]) {
     padding: 8px;
+  }
+  .whatsappLink {
+    right: unset;
+    bottom: 26px;
+    left: 196px;
+  }
+  .whatsappLink span {
+    display: none;
   }
 }/*# sourceMappingURL=our-story.css.map */
