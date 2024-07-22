@@ -274,6 +274,60 @@
             }
         }
     }
+
+    .card-radio-btn {
+        input[type="radio"] {
+            width: 86px;
+            height: 39px;
+            margin: 0;
+            justify-content: center;
+            color: var(--primary);
+            box-shadow: none;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            padding: 0;
+            text-align: center;
+            border: 1px solid #a00014;
+            position: relative;
+            cursor: pointer;
+            & + span {
+                display: none;
+            }
+            &:before {
+                content: "select";
+                font-size: 16px;
+                font-family: "DM Sans", sans-serif;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: #a00014;
+                line-height: 39px;
+                z-index: 2;
+                position: relative;
+            }
+            &:checked {
+                &::before {
+                    color: #f3e5ba;
+                }
+                &::after {
+                    border: 2px solid #a00014;
+                    background-color: #a00014;
+                    color: #f3e5ba;
+                    transition: border 0.3s;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 0;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
     .card-radio-btn .content_head {
         font-size: 16px;
         font-family: "DM Sans", sans-serif;
@@ -389,7 +443,6 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    
     .memberShipWrap .bannerTitle h1 {
         font-size: 60px;
         line-height: 64px;
