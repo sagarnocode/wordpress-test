@@ -77,3 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+$(document).on(
+  'change',
+  '.file-border', 
+  function(){
+    
+  var filename = this.value.split('\\').pop();
+console.log(filename);
+console.log(this)
+  $(this).closest('#upload-btn').html(filename);
+});
+

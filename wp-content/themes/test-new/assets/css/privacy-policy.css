@@ -41,7 +41,7 @@
   height: 590px;
   margin-right: -44px;
 }
-.contentDetails p {
+.contentDetails p, .contentDetails ol li, .contentDetails ul li, .contentDetails a {
   font-family: "gilroy-regular";
   font-size: 14px;
   line-height: 21px;
@@ -49,6 +49,13 @@
   color: #a00014;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.contentDetails h2, .contentDetails h3 {
+  color: #a00014;
+  font-family: "gilroy-bold";
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 25px;
 }
 .contentDetails .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   line-height: 30px;

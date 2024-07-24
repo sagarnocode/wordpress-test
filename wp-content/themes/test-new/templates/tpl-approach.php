@@ -133,7 +133,7 @@ get_header();
             </div>
             <div class="col-lg-5 btnBox">
                 <div class="joinBtnWrap">
-                    <a href="./index.php/fill-in-details/" class="red-btn"><?php the_sub_field( 'join_today_btn' ); ?></a>
+                    <a href="./index.php/membership/" class="red-btn"><?php the_sub_field( 'join_today_btn' ); ?></a>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
   margin-top: 52px;
 }
 .ourStory .storyTtitle h3 {
-  font-family: "agatholight";
+  font-family: "agatho-regular";
   font-size: 70px;
   font-weight: 300;
   line-height: 74.06px;
@@ -47,7 +47,7 @@
   margin-bottom: 90px;
 }
 .letsTalk h2 {
-  font-family: "agatholight";
+  font-family: "agatho-regular";
   font-size: 50px;
   font-weight: 300;
   line-height: 52.9px;
@@ -151,6 +151,11 @@
 .formWrap .inputWrap br {
   margin-bottom: 0;
 }
+.formWrap .submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .formWrap .submit-btn [type=submit] {
   border: 1px solid #f3e5ba;
   background-color: #f3e5ba !important;
@@ -165,27 +170,54 @@
   text-align: center;
   height: 56px;
 }
-
-.whatsappLink {
-  position: absolute;
-  right: 20px;
-  bottom: 40px;
+.formWrap .submit-btn .wpcf7-spinner {
+  margin: 0 5px;
 }
-.whatsappLink span {
+
+.whatsAppLink span {
   color: #f3e5ba;
 }
-.whatsappLink a {
+.whatsAppLink .whatsAppClick {
   width: 47px;
   height: 47px;
   display: inline-block;
+  background: url("../images/whatsApp.svg") transparent no-repeat !important;
+  vertical-align: middle;
 }
-.whatsappLink a:hover, .whatsappLink a:focus {
+.whatsAppLink .whatsAppClick:hover, .whatsAppLink .whatsAppClick:focus {
   background-color: transparent !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]:hover:-webkit-inner-spin-button,
+input[type=number]:hover:-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media only screen and (max-width: 1199px) {
   .ourStory .storyContent {
     margin: 0;
+  }
+  .formWrap {
+    padding: 25px;
+  }
+  .formWrap .wpcf7-spinner {
+    margin: 0 5px;
+  }
+  .whatsAppLink span {
+    font-size: 13px;
+  }
+  .whatsAppLink .whatsAppClick {
+    height: 35px;
+    width: 35px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -265,12 +297,12 @@
   .formWrap input:not([type=submit]) {
     padding: 8px;
   }
-  .whatsappLink {
+  .whatsAppLink {
     right: unset;
     bottom: 26px;
     left: 196px;
   }
-  .whatsappLink span {
+  .whatsAppLink span {
     display: none;
   }
 }/*# sourceMappingURL=our-story.css.map */
