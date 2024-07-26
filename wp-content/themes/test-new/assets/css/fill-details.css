@@ -99,6 +99,8 @@
 .detailsFormWrap .upload-btn-wrapper .btn {
   z-index: 1;
   position: relative;
+  color: #a00014;
+  text-decoration: none;
 }
 .detailsFormWrap .upload-btn-wrapper span:not(.wpcf7-not-valid-tip) {
   z-index: 10;
@@ -215,4 +217,16 @@
     min-width: 20px;
     min-height: 20px;
   }
+}
+.qrCode {
+  background: white;
+  border: 1px solid #a00014;
+  min-height: 100px;
+  min-width: 100px;
+  width: 250px;
+  cursor: zoom-in;
+}
+
+.modal .btn-close {
+  background-color: transparent !important;
 }/*# sourceMappingURL=fill-details.css.map */
