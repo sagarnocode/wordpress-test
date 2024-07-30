@@ -52,7 +52,7 @@
   }
   .upload-btn-wrapper {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     display: block;
     width: 142px;
     margin-top: 23px;
@@ -238,4 +238,19 @@
 
 .modal .btn-close {
   background-color: transparent !important;
+}
+.upload-btn-wrapper .wpcf7-not-valid-tip {
+  margin-top: 38px;
+  position: absolute;
+  bottom: -30px;
+  width: 300px;
+}
+.detailsFormWrap .upload-btn-wrapper .btn {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.detailsFormWrap .btn {
+  line-height: 16px;
 }
