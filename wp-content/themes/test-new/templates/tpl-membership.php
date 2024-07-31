@@ -85,6 +85,7 @@ get_header();
                     src="<?php echo $rs14k_qr_code['url']; ?>" alt="<?php echo $rs14k_qr_code['alt']; ?>" />
             </div>
             <?php } ?>
+            <span class="qrDetails"><?php the_sub_field( 'qr_code_details' ); ?></span>
             <?php endwhile; ?>
             <?php endif; ?>
             <?php ?>

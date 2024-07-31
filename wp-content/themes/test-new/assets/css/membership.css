@@ -166,6 +166,12 @@
   display: flex;
   margin-bottom: 0;
 }
+.giftMemberForm .membershipForm .submit-wrap {
+  gap: 20px;
+}
+.giftMemberForm .membershipForm .submit-wrap .whatsAppLink span {
+  color: #a00014;
+}
 .giftMemberForm .leftForm,
 .giftMemberForm .rightForm {
   width: 50%;

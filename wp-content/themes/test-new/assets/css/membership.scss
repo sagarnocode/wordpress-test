@@ -182,6 +182,12 @@
       display: flex;
       margin-bottom: 0;
     }
+    .submit-wrap {
+      gap: 20px;
+      .whatsAppLink span {
+        color: #a00014;
+      }
+    }
   }
   .leftForm,
   .rightForm {

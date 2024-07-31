@@ -135,6 +135,7 @@
 }
 .detailsFormWrap input[type=checkbox]:checked {
   background-color: #a00014;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
 .detailsFormWrap .checkbox label {
   display: flex;
@@ -149,6 +150,14 @@
 }
 .detailsFormWrap .wpcf7-list-item.last {
   margin-bottom: 0;
+}
+
+.checkWithLink label {
+  display: flex;
+}
+.checkWithLink label a {
+  color: #a00014;
+  text-decoration: underline;
 }
 
 .formTitleWrap {
@@ -189,6 +198,27 @@
   font-size: 18px;
   line-height: 21.83px;
   text-align: center;
+}
+
+.qrDetails {
+  display: block;
+  margin-top: 10px;
+  color: #a00014;
+}
+
+.mb-20 {
+  margin-bottom: 23px;
+}
+
+.submit-btn-wrap {
+  display: flex;
+  align-items: center;
+}
+.submit-btn-wrap .wpcf7-spinner {
+  margin: 0 5px;
+}
+.submit-btn-wrap .whatsAppLink span {
+  color: #a00014;
 }
 
 @media only screen and (max-width: 767px) {
