@@ -51,7 +51,7 @@
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-4">
-                <div class="footer-logo"><img src="<?php echo $_asset_path ?>/assets/images/couplet-logo-red.svg" />
+                <div class="footer-logo"><img src="/wp-content/uploads/2024/07/couplet-logo-red.png" style="max-width: 212px" />
                 </div>
             </div>
         </div>

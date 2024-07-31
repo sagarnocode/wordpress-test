@@ -25,9 +25,11 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 
 
     <div class="site-logo">
-        <img src="<?php echo $_asset_path ?>/assets/images/couplet-logo-yellow.svg" />
-        <img class="yellow" src="<?php echo $_asset_path ?>/assets/images/couplet-logo-yellow.svg" />
-        <img class="red" src="<?php echo $_asset_path ?>/assets/images/couplet-logo-red.svg" />
+		<a href="/">
+        <img src="/wp-content/uploads/2024/07/couplet-logo-yellow.png" />
+        <img class="yellow" src="/wp-content/uploads/2024/07/couplet-logo-yellow.png" />
+        <img class="red" src="/wp-content/uploads/2024/07/couplet-logo-red.png" />
+			</a>
     </div>
 
 
